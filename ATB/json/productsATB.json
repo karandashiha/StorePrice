@@ -1,0 +1,247 @@
+{
+  "Молочні продукти та яйця": [
+    {
+      "productName":"Молоко",
+      "url": "https://www.atbmarket.com/product/moloko-09kg-svoa-linia-ultrapasterizovane-25-tetra-fino-z"
+    },
+    {
+      "productName":"Сир",
+      "url": "https://www.atbmarket.com/product/sir-kislomolocnij-350-g-bilocerkivskij-5-pet"
+    },
+    {
+      "productName":"Сир",
+      "url": "https://www.atbmarket.com/product/sir-kislomolocnij-350-g-svoa-linia-5-paket"
+    },
+    {
+      "productName":"Сметана",
+      "url": "https://www.atbmarket.com/product/smetana-200-g-svoa-linia-15-pet"
+    },
+    {
+      "productName":"Сметана",
+      "url": "https://www.atbmarket.com/product/smetana-200-g-svoa-linia-20-pet"
+    },
+    {
+      "productName": "Яйця",
+      "url": "https://www.atbmarket.com/product/ajce-kurace-10-st-ukraina-1-kategoria-fas?srsltid=AfmBOorlgvEsyCRbfLmJvcgIT0JPA4NUffpBQRHfEx6peHZqhy7bWb7N"
+    },
+    {
+      "productName":"Йогурт",
+      "url": "https://www.atbmarket.com/product/jogurt-300-g-molokia-gustij-bilij-po-grecki-8"
+    },
+    {
+      "productName":"Кефір",
+      "url": "https://www.atbmarket.com/product/kefir-09-kg-agotinskij-25"
+    },
+    {
+      "productName":"Кефір",
+      "url": "https://www.atbmarket.com/product/kefir-09-kg-sodennij-zbir-25-peg"
+    }
+  ],
+   "Овочі": [
+    {
+      "productName": "Огірок",
+      "url": "https://www.atbmarket.com/product/ogirki-1-gat"
+    },
+    {
+      "productName": "Помідор",
+      "url": "https://www.atbmarket.com/product/tomati-teplicni-1-gatunok"
+    },
+    {
+      "productName": "Капуста",
+      "url": "https://www.atbmarket.com/product/kapusta-1-gat"
+    },
+    {
+      "productName": "Перець солодкий червоний",
+      "url": "https://www.atbmarket.com/product/perec-solodkij-cervonij-1-gat"
+    },
+    {
+      "productName": "Перець солодкий жовтий",
+      "url": "https://www.atbmarket.com/product/perec-solodkij-zovtij-1-gat"
+    },
+    {
+      "productName": "Картопля",
+      "url": "https://www.atbmarket.com/product/kartopla-1-gat"
+    },
+    {
+      "productName": "Морква",
+      "url": "https://www.atbmarket.com/product/morkva-1gat"
+    },
+    {
+      "productName": "Буряк",
+      "url": "https://www.atbmarket.com/product/burak-1-gat"
+    },
+    {
+      "productName": "Цибуля ріпчаста",
+      "url": "https://www.atbmarket.com/product/cibula-ripcasta-1-gat"
+    },
+    {
+      "productName": "Часник імпортний",
+      "url": "https://www.atbmarket.com/product/casnik-import-1-gat"
+    },
+    {
+      "productName": "Часник ранній",
+      "url": "https://www.atbmarket.com/product/casnik-rannij-1-gat"
+    },
+    {
+      "productName": "Кабачок",
+      "url": "https://www.atbmarket.com/product/kabacki-1-gat"
+    }
+  ],
+  "Фрукти": [
+    {
+      "productName": "Банан",
+      "url": "https://www.atbmarket.com/product/banan-1-gat"
+    },
+    {
+      "productName": "Яблуко",
+      "url": "https://www.atbmarket.com/product/abluko-ukrainske"
+    },
+    {
+      "productName": "Мандарини",
+      "url": "https://www.atbmarket.com/product/mandarini-1gat"
+    },
+    {
+      "productName": "Авокадо Хаас",
+      "url": "https://www.atbmarket.com/product/avokado-haas-vagove-1-gat"
+    },
+    {
+      "productName": "Лимон",
+      "url": "https://www.atbmarket.com/product/limon-1-gat"
+    },
+    {
+      "productName": "Апельсин",
+      "url": "https://www.atbmarket.com/product/apelsin-vag-1-gat"
+    },
+    {
+      "productName": "Ківі",
+      "url": "https://www.atbmarket.com/product/kivi-vagove-1gat"
+    }
+  ],
+  "Бакалія": [
+    {
+      "productName": "Борошно",
+      "url": "https://www.atbmarket.com/product/borosno-5-kg-rozumnij-vibir-psenicne"
+    },
+    {
+      "productName": "Гречка",
+      "url": "https://www.atbmarket.com/product/krupa-1-kg-rozumnij-vibir-grecana"
+    },
+    {
+      "productName": "Рис круглий",
+      "url": "https://www.atbmarket.com/product/krupa-1-kg-rozumnij-vibir-ris-kruglozernistij-slifovanij"
+    },
+    {
+      "productName": "Рис довгий",
+      "url": "https://www.atbmarket.com/product/krupa-1-kg-rozumnij-vibir-ris-dovgozernistij-slifovanij"
+    },
+    {
+      "productName": "Вівсянка",
+      "url": "https://www.atbmarket.com/product/plastivci-400g-rozumnij-vibir-ekstrano1"
+    },
+    {
+      "productName": "Горох крупа",
+      "url": "https://www.atbmarket.com/product/krupa-1-kg-rozumnij-vibir-goroh"
+    },
+    {
+      "productName": "Майонез",
+      "url": "https://www.atbmarket.com/product/majonez-350-g-rozumnij-vibir-50-fpak"
+    },
+    {
+      "productName": "Олія",
+      "url": "https://www.atbmarket.com/product/olia-085-l-stozar-sonasnikova-rafinovana-pet"
+    },
+    {
+      "productName": "Цукор",
+      "url": "https://www.atbmarket.com/product/cukor-1-kg-fasovanij-pisok"
+    },
+    {
+      "productName": "Сіль",
+      "url": "https://www.atbmarket.com/product/sil-1-kg-kuhonna-kamana-melena-gatunok-persij-mup"
+    }
+  ],
+  "Заморожені продукти": [
+    {
+      "productName": "Капуста броколі",
+      "url": "https://www.atbmarket.com/product/kapusta-brokoli-400g-svoa-linia-svidkozamorozena"
+    },
+    {
+      "productName": "Суміш овочей",
+      "url": "https://www.atbmarket.com/product/sumis-ovoceva-400g-svoa-linia-meksikanska-svidkozamorozena"
+    },
+    {
+      "productName": "Суміш овочей",
+      "url": "https://www.atbmarket.com/product/sumis-ovoceva-400g-svoa-linia-italijska-svidkozamorozena"
+    }
+  ],
+  "Побутова хімія": [
+    {
+      "productName": "Пом'якшувач для тканин (Діамантовий інжир і водяний лотос)",
+      "url": "https://www.atbmarket.com/product/koncentrovanij-kondicioner-dla-bilizni-07l-lenor-diamantovij-inzir-i-vodnij-lotos-pflakon"
+    },
+    {
+      "productName": "Пом'якшувач для тканин (Золота орхідея та бурштин)",
+      "url": "https://www.atbmarket.com/product/pomaksuvac-dla-tkanin-07-l-lenor-zolota-orhidea-vanilna-orhidea-ta-zolotij-burstin-pflakon"
+    },
+    {
+      "productName": "Пом'якшувач для тканин (Spring Awakening)",
+      "url": "https://www.atbmarket.com/product/pomaksuvac-dla-tkanin-085-l-lenor-spring-awakening-pflakon"
+    },
+    {
+      "productName": "Гель для прання",
+      "url": "https://www.atbmarket.com/product/gel-dla-pranna-21-kg-wash-free-universalnij"
+    },
+    {
+      "productName": "Білизна (відбілювач)",
+      "url": "https://www.atbmarket.com/product/zasib-vibiluucij-09-kg-rozumnij-vibir-bilizna-pflakon?query=%D0%B1%D1%96%D0%BB%D0%B8%D0%B7%D0%BD%D0%B0"
+    },
+    {
+      "productName": "Крот (засіб для прочищення труб)",
+      "url": "https://www.atbmarket.com/product/zasib-dla-procisenna-zlivnih-trub-1l-mister-krit-rozumnij-vibir"
+    }
+  ],
+  "Гігієна та краса": [
+    {
+      "productName": "Зубна паста",
+      "url": "https://www.atbmarket.com/product/pasta-zubna-75-ml-blend-a-med-3dwhite-arkticna-svizist-kup"
+    },
+    {
+      "productName": "Щоденні прокладки",
+      "url": "https://www.atbmarket.com/product/prokladki-sodenni-455-st-lidie-deo-camomile-promo"
+    },
+    {
+      "productName": "Прокладки для критичних днів (Ultra Relax)",
+      "url": "https://www.atbmarket.com/product/prokladki-10-st-bella-for-teens-ultra-relax-deo"
+    },
+    {
+      "productName": "Прокладки для критичних днів (Ultra Sensitive)",
+      "url": "https://www.atbmarket.com/product/prokladki-10-st-bella-for-teens-ultra-sensitive-extra-soft"
+    },
+    {
+      "productName": "Дезодорант",
+      "url": "https://www.atbmarket.com/product/dezodorant-50-ml-nivea-deo-efekt-pudri"
+    },
+    {
+      "productName": "Туалетний папір (Svoia Linia)",
+      "url": "https://www.atbmarket.com/product/papir-tualetnij-4-st-svoa-linia-elite-soft-aromatizovanij-dvosarovij-z-kolorovim-tisnennam"
+    },
+    {
+      "productName": "Туалетний папір (Сніжна Панда)",
+      "url": "https://www.atbmarket.com/product/papir-tualetnij-4-st-snizna-panda-superabsorb-celuloznij-dvosarovij"
+    },
+        {
+      "productName": "Рушники паперові",
+      "url": "https://www.atbmarket.com/product/rusniki-paperovi-2-st-svoa-linia-2-sarovi-bili"
+    }
+
+  ],
+  "Корм для котів": [
+    {
+      "productName": "Ласощі (Курка та форель)",
+      "url": "https://www.atbmarket.com/product/lasosi-dla-kotiv-5-g-club-4-paws-premium-masna-palicka-kurka-ta-forel"
+    },
+    {
+      "productName": "Ласощі (Індичка та кролик)",
+      "url": "https://www.atbmarket.com/product/lasosi-dla-kotiv-5-g-club-4-paws-premium-masna-palicka-indicka-ta-krolik-mup"
+    }
+  ]
+}
