@@ -1,0 +1,282 @@
+{
+  "Молочні продукти та яйця": [
+    {
+      "productName": "Молоко",
+      "url": "https://silpo.ua/product/moloko-selianske-pytne-ultrapasteryzovane-2-5-28734"
+    },
+    {
+      "productName": "Молоко",
+      "url": "https://silpo.ua/product/moloko-ultrapasteryzovane-molokiia-ultra-2-5-950473"
+    },
+    {
+      "productName": "Молоко",
+      "url": "https://silpo.ua/product/moloko-ultrapasteryzovane-premiia-2-5-799508"
+    },
+    {
+      "productName": "Молоко",
+      "url": "https://silpo.ua/product/moloko-ultrapasteryzovane-yagotynske-2-6-848613"
+    },
+    {
+      "productName": "Молоко",
+      "url": "https://silpo.ua/product/moloko-galychyna-z-chystykh-karpat-2-5-716286"
+    },
+    {
+      "productName": "Молоко",
+      "url": "https://silpo.ua/product/moloko-ultrapasteryzovane-yagotynske-3-2-848614"
+    },
+    {
+      "productName": "Творог",
+      "url": "https://silpo.ua/product/syr-ferma-kyslomolochnyi-5-862307"
+    },
+    {
+      "productName": "Творог",
+      "url": "https://silpo.ua/product/syr-kyslomolochnyi-bilo-domashnii-5-819149"
+    },
+    {
+      "productName": "Творог",
+      "url": "https://silpo.ua/product/syr-kyslomolochnyi-molokiia-5-838497"
+    },
+    {
+      "productName": "Сметана",
+      "url": "https://silpo.ua/product/smetana-molokiia-20-838947"
+    },
+    {
+      "productName": "Сметана",
+      "url": "https://silpo.ua/product/smetana-molokiia-15-838948"
+    },
+    {
+      "productName": "Йогурт",
+      "url": "https://silpo.ua/product/yogurt-molokiia-bilyi-po-gretsky-gustyi-8-stakan-839326"
+    },
+    {
+      "productName": "Кефір",
+      "url": "https://silpo.ua/product/kefir-yagotynskyi-2-5-p-e-543964"
+    },
+    {
+      "productName": "Кефір",
+      "url": "https://silpo.ua/product/kefir-molokiia-sonechko-2-5-p-e-702984"
+    },
+    {
+      "productName": "Яйця",
+      "url": "https://silpo.ua/product/yaitse-kuriache-s1-s0-64519"
+    }
+  ],
+  "Овочі": [
+    {
+      "productName": "Огірок",
+      "url": "https://silpo.ua/product/ogirok-ekstra-142342"
+    },
+    {
+      "productName": "Помідор",
+      "url": "https://silpo.ua/product/tomat-32589"
+    },
+    {
+      "productName": "Капуста",
+      "url": "https://silpo.ua/product/kapusta-bilokachanna-52637"
+    },
+    {
+      "productName": "Перець солодкий",
+      "url": "https://silpo.ua/product/perets-chervonyi-32887"
+    },
+    {
+      "productName": "Перець солодкий",
+      "url": "https://silpo.ua/product/perets-zhovtyi-32885"
+    },
+    {
+      "productName": "Картопля",
+      "url": "https://silpo.ua/product/kartoplia-bila-531296"
+    },
+    {
+      "productName": "Картопля",
+      "url": "https://silpo.ua/product/kartoplia-sortu-koroleva-anna-140135"
+    },
+    {
+      "productName": "Морква",
+      "url": "https://silpo.ua/product/morkva-34650"
+    },
+    {
+      "productName": "Буряк",
+      "url": "https://silpo.ua/product/buriak-mytyi-371674"
+    },
+    {
+      "productName": "Цибуля",
+      "url": "https://silpo.ua/product/tsybulia-ripchasta-zhovta-32573"
+    },
+    {
+      "productName": "Часник",
+      "url": "https://silpo.ua/product/chasnyk-32595"
+    },
+    {
+      "productName": "Часник",
+      "url": "https://silpo.ua/product/chasnyk-molodyi-97163"
+    },
+    {
+      "productName": "Кабачок",
+      "url": "https://silpo.ua/product/kabachok-51600"
+    }
+  ],
+  "Фрукти": [
+    {
+      "productName": "Банан",
+      "url": "https://silpo.ua/product/banan-32485"
+    },
+    {
+      "productName": "Яблуко",
+      "url": "https://silpo.ua/product/yabluko-ukrainske-32479"
+    },
+    {
+      "productName": "Мандарини",
+      "url": "https://silpo.ua/product/mandaryn-murkot-810182"
+    },
+    {
+      "productName": "Авокадо",
+      "url": "https://silpo.ua/product/avokado-khass-styglyi-928217"
+    },
+    {
+      "productName": "Лимон",
+      "url": "https://silpo.ua/product/lymon-32550"
+    },
+    {
+      "productName": "Апельсин",
+      "url": "https://silpo.ua/product/apelsyn-32546"
+    },
+    {
+      "productName": "Ківі",
+      "url": "https://silpo.ua/product/kivi-vagovyi-134544"
+    }
+  ],
+   "Бакалія": [
+    {
+      "productName": "Борошно",
+      "url": "https://silpo.ua/product/boroshno-khutorok-pshenychne-v-g-383351"
+    },
+    {
+      "productName": "Гречка",
+      "url": "https://silpo.ua/product/krupa-grechana-povna-chasha-iadrytsia-shvydkorozvariuvana-490833"
+    },
+    {
+      "productName": "Рис круглий",
+      "url": "https://silpo.ua/product/rys-kruglyi-shlifovanyi-689241"
+    },
+    {
+      "productName": "Рис довгий",
+      "url": "https://silpo.ua/product/rys-dovgyi-shlifovanyi-689247"
+    },
+    {
+      "productName": "Вівсянка",
+      "url": "https://silpo.ua/product/krupa-vivsiana-povna-chasha-pliushchena-890374"
+    },
+    {
+      "productName": "Горох крупа",
+      "url": "https://silpo.ua/product/gorokh-kolotyi-povna-chasha-shlifovanyi-534517"
+    },
+    {
+      "productName": "Майонез",
+      "url": "https://silpo.ua/product/sous-povna-chasha-salatnyi-maioneznyi-30-882607"
+    },
+    {
+      "productName": "Олія",
+      "url": "https://silpo.ua/product/oliia-stozhar-soniashnykova-rafinovana-914671"
+    },
+    {
+      "productName": "Цукор",
+      "url": "https://silpo.ua/product/tsukor-povna-chasha-bilyi-krystalichnyi-961206"
+    },
+    {
+      "productName": "Сіль",
+      "url": "https://silpo.ua/product/sil-kam-iana-kukhona-949968"
+    }
+  ],
+  "Заморожені продукти": [
+    {
+      "productName": "Броколі",
+      "url": "https://silpo.ua/product/kapusta-brokoli-svizhomorozhena-424000"
+    },
+    {
+      "productName": "Суміш овочей",
+      "url": "https://silpo.ua/product/sumish-ovocheva-meksykanska-zamorozhena-970824"
+    }
+  ],
+  "Побутова хімія": [
+    {
+      "productName": "Пом'якшувач для тканин",
+      "url": "https://silpo.ua/product/opoliskuvach-silan-fresh-control-floral-crisp-927913"
+    },
+    {
+      "productName": "Пом'якшувач для тканин",
+      "url": "https://silpo.ua/product/opoliskuvach-silan-fresh-control-cool-fresh-927912"
+    },
+    {
+      "productName": "Пом'якшувач для тканин",
+      "url": "https://silpo.ua/product/opoliskuvach-silan-aromatherapy-dreamy-lotus-927914"
+    },
+    {
+      "productName": "Гель для прання",
+      "url": "https://silpo.ua/product/gel-dlia-prannia-wash-free-universalnyi-936302"
+    },
+    {
+      "productName": "Білизна",
+      "url": "https://silpo.ua/product/zasib-vidbiliuiuchyi-povna-chasha-bilyzna-922413"
+    },
+    {
+      "productName": "Крот",
+      "url": "https://silpo.ua/product/zasib-sana-krot-dlia-rozchynennia-zabrudnen-u-trubakh-546466"
+    }
+  ],
+  "Гігієна та краса": [
+    {
+      "productName": "Зубна паста",
+      "url": "https://silpo.ua/product/zubna-pasta-blend-a-med-3d-white-arktychna-svizhist-927424"
+    },
+    {
+      "productName": "Зубна паста",
+      "url": "https://silpo.ua/product/pasta-zubna-lacalut-antykariies-762081"
+    },
+    {
+      "productName": "Прокладки щоденні",
+      "url": "https://silpo.ua/product/prokladky-shchodenni-lidie-deo-66205"
+    },
+    {
+      "productName": "Прокладки для критичних днів",
+      "url": "https://silpo.ua/product/prokladky-kotex-ultra-soft-normal-453995"
+    },
+    {
+      "productName": "Прокладки для критичних днів",
+      "url": "https://silpo.ua/product/prokladky-bella-perfecta-blue-extra-soft-40551"
+    },
+    {
+      "productName": "Дезодорант",
+      "url": "https://silpo.ua/product/dezodorant-kulkovyi-nivea-powder-touch-951116"
+    },
+    {
+      "productName": "Дезодорант",
+      "url": "https://silpo.ua/product/tverdyi-dezodorant-old-spice-tiger-claw-893456"
+    },
+    {
+      "productName": "Туалетний папір",
+      "url": "https://silpo.ua/product/papir-tualetnyi-ruta-classic-rose-2-sharovyi-880619"
+    },
+    {
+      "productName": "Туалетний папір",
+      "url": "https://silpo.ua/product/papir-tualetnyi-snizhna-panda-klasik-502544"
+    },
+    {
+      "productName": "Туалетний папір",
+      "url": "https://silpo.ua/product/papir-tualetnyi-nizhnyi-dotyk-2-sharovyi-4-2-927647"
+    },
+    {
+      "productName": "Рушники",
+      "url": "https://silpo.ua/product/rushnyky-povna-chasha-paperovi-bili-2-sharovi-815716"
+    }
+  ],
+  "Корм для котів": [
+    {
+      "productName": "Ласощі",
+      "url": "https://silpo.ua/product/lasoshchi-dlia-kotiv-club-4-paws-kurka-forel-808278"
+    },
+    {
+      "productName": "Ласощі",
+      "url": "https://silpo.ua/product/lasoshchi-dlia-kotiv-club-4-paws-prem-meatstick-indychka-krolyk-932663"
+    }
+  ]
+}
