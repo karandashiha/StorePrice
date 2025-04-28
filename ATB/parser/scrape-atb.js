@@ -136,4 +136,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = scrapeProduct;
+module.exports = scrapeProductsFromJson;
