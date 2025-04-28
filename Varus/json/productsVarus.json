@@ -1,0 +1,85 @@
+{
+  "Молочні продукти та яйця": [
+    { "productName": "Молоко", "url": "https://varus.ua/moloko-zoryana-ultrapasterizovannoe-2-5-900-g" },
+    { "productName": "Молоко", "url": "https://varus.ua/moloko-ultrapasterizovane-2-6-900g-tf" },
+    { "productName": "Молоко", "url": "https://varus.ua/moloko-zhitomirskiy-molochniy-zavod-ultrapasterizovannoe-2-5-900-g" },
+    { "productName": "Молоко", "url": "https://varus.ua/moloko-varto-2-5-ultrapasterizovane-900-g" },
+    { "productName": "Молоко", "url": "https://varus.ua/moloko-molokiya-ultrapasterizovannoe-ultra-25-900-g" },
+    { "productName": "Молоко", "url": "https://varus.ua/moloko-2-5-ultrapasterizovane-bila-liniya-mu-900g" },
+    { "productName": "Молоко", "url": "https://varus.ua/moloko-nashe-moloko-ultrapasterizovannoe-25-1-l" },
+    { "productName": "Молоко", "url": "https://varus.ua/moloko-galichina-2-5-ultrapasterizovane-900-g" },
+    { "productName": "Творог", "url": "https://varus.ua/sir-molok-ya-kislomolochniy-5-350g" },
+    { "productName": "Творог", "url": "https://varus.ua/sir-kislomolochniy-5-yagotin-350g" },
+    { "productName": "Творог", "url": "https://varus.ua/sir-b-locerk-vskiy-kislomolochniy-5-350g" },
+    { "productName": "Сметана", "url": "https://varus.ua/smetana-zlagoda-20-200-g" },
+    { "productName": "Сметана", "url": "https://varus.ua/smetana-stolicya-smaku-15-400-g" },
+    { "productName": "Йогурт", "url": "https://varus.ua/yogurt-biliy-po-grecki-8-molokiya-300g-stakan" },
+    { "productName": "Кефір", "url": "https://varus.ua/kefir-2-5-zlagoda-880g-p-e" },
+    { "productName": "Кефір", "url": "https://varus.ua/kefir-2-5-vigoda-900g-p-p-ukraina" },
+    { "productName": "Яйця", "url": "https://varus.ua/yajce-kuryache-nefasovane-s0-1-sht" }
+  ],
+  "Овочі": [
+    { "productName": "Огірок", "url": "https://varus.ua/ogirok-teplichniy-1-gatunok-vag" },
+    { "productName": "Помідор", "url": "https://varus.ua/pomidor-krasnye-vesovoy" },
+    { "productName": "Капуста", "url": "https://varus.ua/kapusta-1-gatunok-vag" },
+    { "productName": "Перець солодкий", "url": "https://varus.ua/perec-chervoniy-1-gatunok-vag" },
+    { "productName": "Перець солодкий", "url": "https://varus.ua/perec-sladkiy-vesovoy" },
+    { "productName": "Картопля", "url": "https://varus.ua/kartoplya-1-gatunok-vag" },
+    { "productName": "Картопля", "url": "https://varus.ua/kartoplya-dlya-zapikannya-koroleva-anna-vagova" },
+    { "productName": "Морква", "url": "https://varus.ua/morkva-1-gatunok-vag" },
+    { "productName": "Буряк", "url": "https://varus.ua/buryak-1-gatunok-vag" },
+    { "productName": "Цибуля", "url": "https://varus.ua/cibulya-ripchasta-1-gatunok-vag" },
+    { "productName": "Часник", "url": "https://varus.ua/chasnik-vag" },
+    { "productName": "Кабачок", "url": "https://varus.ua/kabachki-1-gatunok-importni-vag" }
+  ],
+  "Фрукти": [
+    { "productName": "Банан", "url": "https://varus.ua/banan-vag" },
+    { "productName": "Яблуко", "url": "https://varus.ua/yabluko-ukrainske-1-gatunok-vag" },
+    { "productName": "Мандарини", "url": "https://varus.ua/mandarin-murkot-vag" },
+    { "productName": "Авокадо", "url": "https://varus.ua/avokado-haas-vag" },
+    { "productName": "Лимон", "url": "https://varus.ua/limon-biberciler-interdonato-vagovij" },
+    { "productName": "Апельсин", "url": "https://varus.ua/apelsin-vag" },
+    { "productName": "Ківі", "url": "https://varus.ua/kivi-vag" }
+  ],
+  "Бакалія": [
+    { "productName": "Борошно", "url": "https://varus.ua/boroshno-pshenichne-dnipromlin-vischogo-sortu-5-kg" },
+    { "productName": "Гречка", "url": "https://varus.ua/krupa-grechana-vigoda-900g" },
+    { "productName": "Рис круглий", "url": "https://varus.ua/ris-vigoda-shlifovaniy-kruglozernistiy-0-9-kg" },
+    { "productName": "Рис довгий", "url": "https://varus.ua/ris-vigoda-shlifovaniy-dovgozernistiy-0-9-kg" },
+    { "productName": "Вівсянка", "url": "https://varus.ua/krupa-vvsyana-vigoda-plyuschena-500-g" },
+    { "productName": "Горох крупа", "url": "https://varus.ua/goroh-kolotiy-vigoda-900g" },
+    { "productName": "Майонез", "url": "https://varus.ua/mayonez-salatniy-30-schedro-190g-f-p" },
+    { "productName": "Олія", "url": "https://varus.ua/oliya-sonyashnikova-rafinovana-shef-stozhar-085l" },
+    { "productName": "Цукор", "url": "https://varus.ua/cukor-vigoda-1000g" },
+    { "productName": "Сіль", "url": "https://varus.ua/sol-povarennaya-dobrobut-kamennaya-molotaya-pervogo-sorta-1kg" }
+  ],
+  "Заморожені продукти": [
+    { "productName": "Броколі", "url": "https://varus.ua/brokkoli-zamorozhennoe-vesovaya" },
+    { "productName": "Суміш овочей", "url": "https://varus.ua/sumish-ovocheva-vigoda-meksikanska-shvidkozamorozhena-vagova" },
+    { "productName": "Суміш овочей", "url": "https://varus.ua/smes-ovoschnaya-dlya-omleta-zamorozhennaya-vesovaya" }
+  ],
+  "Побутова хімія": [
+    { "productName": "Пом'якшувач для тканин", "url": "https://varus.ua/opolaskivatel-konditsioner-dlya-belya-silan-fresh-sky-880-ml" },
+    { "productName": "Пом'якшувач для тканин", "url": "https://varus.ua/opolaskivatel-konditsioner-dlya-belya-silan-aromatherapy-dreame-lotus-770-ml" },
+    { "productName": "Пом'якшувач для тканин", "url": "https://varus.ua/opolaskivatel-konditsioner-dlya-belya-silan-aromatherapy-fascinating-frangipani-770-ml" },
+    { "productName": "Гель для прання", "url": "https://varus.ua/gel-dlya-stirki-washandfree-universalnyj-2-l" },
+    { "productName": "Білизна", "url": "https://varus.ua/bilizna-chista-vigoda-1000g" },
+    { "productName": "Крот", "url": "https://varus.ua/zasib-dlya-chischennya-trub-mr-krot-koncentrat-sv-500ml-ukraina" }
+  ],
+  "Гігієна та краса": [
+    { "productName": "Зубна паста", "url": "https://varus.ua/zubna-pasta-lacalut-anti-caries-75-ml" },
+    { "productName": "Зубна паста", "url": "https://varus.ua/pasta-zubna-colgate-tingling-mint-maxclean-75ml" },
+    { "productName": "Прокладки щоденні", "url": "https://varus.ua/prokladki-koteks-deo-ezhednevnye-normal-plyus-56-sht" },
+    { "productName": "Прокладки для критичних днів", "url": "https://varus.ua/prokladki-gigienichni-kotex-ultra-normal-20-sht" },
+    { "productName": "Дезодорант", "url": "https://varus.ua/dezodorant-rol-zhinochiy-efekt-pudri-niveya-50ml" },
+    { "productName": "Дезодорант", "url": "https://varus.ua/dezodorant-old-spice-deep-sea-50-ml" },
+    { "productName": "Туалетний папір", "url": "https://varus.ua/papir-tualetniy-2-x-sharoviy-classic-snigova-panda-2shari-4sht" },
+    { "productName": "Туалетний папір", "url": "https://varus.ua/papir-tualetniy-trisharoviy-biliy-z-tisnennyam-varto-soft-4sht" },
+    { "productName": "Рушники", "url": "https://varus.ua/rushnik-paperoviy-varto-soft-trisharoviy-1-sht-1" },
+    { "productName": "Рушники", "url": "https://varus.ua/rushniki-paperovi-selekta-mega-rol-trisharovi-bili-ruta-1-rulon" }
+  ],
+  "Корм для котів": [
+    { "productName": "Ласощі", "url": "https://varus.ua/myasna-palichka-klub-4-lapi-losos-ta-triska-5-g" },
+    { "productName": "Ласощі", "url": "https://varus.ua/myasna-palichka-dlya-kotiv-indichka-ta-yagnya-premium-klub-4-lapi-5g" }
+  ]
+}

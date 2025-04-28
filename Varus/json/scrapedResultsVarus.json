@@ -1,0 +1,324 @@
+[
+  {
+    "productName": "Молоко",
+    "title": "МОЛОКО ГАЛИЧИНА 2.5% 900 Г",
+    "price": "56.00",
+    "image": "https://varus.ua/img/carousel/1140/1140/2568788/0",
+    "category": "Молоко"
+  },
+  {
+    "productName": "Творог",
+    "title": "СИР БІЛОЦЕРКІВСЬКИЙ КИСЛОМОЛОЧНИЙ 5% 350 Г",
+    "price": "80.50",
+    "image": "https://varus.ua/img/carousel/1140/1140/2563075/0",
+    "category": "Кисломолочні сири"
+  },
+  {
+    "productName": "Сметана",
+    "title": "СМЕТАНА СТОЛИЦЯ СМАКУ 15% 400 Г",
+    "price": "47.90",
+    "image": "https://varus.ua/img/carousel/1140/1140/2623216/0",
+    "category": "Сметана"
+  },
+  {
+    "productName": "Йогурт",
+    "title": "ЙОГУРТ 8% ГУСТИЙ БІЛИЙ ПО-ГРЕЦЬКИ МОЛОКІЯ СТ 300Г",
+    "price": "50.40",
+    "image": "https://varus.ua/img/product/1140/1140/2597662",
+    "category": "Йогурти"
+  },
+  {
+    "productName": "Кефір",
+    "title": "КЕФIР ВИГОДА НІЖНІСТЬ 2,5%, 900 Г",
+    "price": "42.90",
+    "image": "https://varus.ua/img/product/1140/1140/2497805",
+    "category": "Кефір"
+  },
+  {
+    "productName": "Яйця",
+    "title": "ЯЙЦЕ КУРЯЧЕ НЕФАСОВАНЕ С0 1 ШТ",
+    "price": "5.39",
+    "image": "https://varus.ua/img/product/1140/1140/2634131",
+    "category": "Яйця"
+  },
+  {
+    "productName": "Огірок",
+    "title": "ОГІРОК ТЕПЛИЧНИЙ ВАГОВИЙ",
+    "price": "99.90",
+    "image": "https://varus.ua/img/product/1140/1140/2507408",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Помідор",
+    "title": "ПОМІДОР САЛАТНИЙ ВАГОВИЙ",
+    "price": "109.90",
+    "image": "https://varus.ua/img/product/1140/1140/156936",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Капуста",
+    "title": "КАПУСТА ВАГОВА",
+    "price": "61.90",
+    "image": "https://varus.ua/img/product/1140/1140/145844",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Перець солодкий",
+    "title": "ПЕРЕЦЬ СОЛОДКИЙ В АСОРТИМЕНТІ, ВАГОВИЙ",
+    "price": "104.00",
+    "image": "https://varus.ua/img/product/1140/1140/150168",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Картопля",
+    "title": "КАРТОПЛЯ КОРОЛЕВА АННА ДЛЯ ЗАПІКАННЯ ВАГОВА",
+    "price": "44.90",
+    "image": "https://varus.ua/img/product/1140/1140/2651656",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Морква",
+    "title": "МОРКВА ВАГОВА",
+    "price": "49.90",
+    "image": "https://varus.ua/img/product/1140/1140/147011",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Буряк",
+    "title": "БУРЯК ВАГОВИЙ",
+    "price": "42.90",
+    "image": "https://varus.ua/img/product/1140/1140/146474",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Цибуля",
+    "title": "ЦИБУЛЯ РІПЧАСТА ВАГОВА",
+    "price": "31.90",
+    "image": "https://varus.ua/img/product/1140/1140/124166",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Часник",
+    "title": "ЧАСНИК, ВАГОВИЙ",
+    "price": "184.90",
+    "image": "https://varus.ua/img/product/1140/1140/124241",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Кабачок",
+    "title": "КАБАЧКИ ВАГОВІ",
+    "price": "139.90",
+    "image": "https://varus.ua/img/product/1140/1140/2507412",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Банан",
+    "title": "БАНАН ВАГОВИЙ",
+    "price": "72.80",
+    "image": "https://varus.ua/img/product/1140/1140/127622",
+    "category": "Фрукти свіжі"
+  },
+  {
+    "productName": "Яблуко",
+    "title": "ЯБЛУКО УКРАЇНСЬКЕ ВАГОВЕ",
+    "price": "55.90",
+    "image": "https://varus.ua/img/product/1140/1140/353913",
+    "category": "Фрукти свіжі"
+  },
+  {
+    "productName": "Мандарини",
+    "title": "МАНДАРИН МУРКОТ ВАГОВИЙ",
+    "price": "89.90",
+    "image": "https://varus.ua/img/product/1140/1140/2615440",
+    "category": "Фрукти свіжі"
+  },
+  {
+    "productName": "Авокадо",
+    "title": "АВОКАДО ХААС, ВАГОВИЙ",
+    "price": "269.90",
+    "image": "https://varus.ua/img/product/1140/1140/2613174",
+    "category": "Овочі свіжі"
+  },
+  {
+    "productName": "Лимон",
+    "title": "ЛИМОН ІНТЕРДОНАТО ВАГОВИЙ",
+    "price": "119.90",
+    "image": "https://varus.ua/img/product/1140/1140/2649124",
+    "category": "Фрукти свіжі"
+  },
+  {
+    "productName": "Апельсин",
+    "title": "АПЕЛЬСИН ВАГОВИЙ",
+    "price": "55.90",
+    "image": "https://varus.ua/img/product/1140/1140/127797",
+    "category": "Фрукти свіжі"
+  },
+  {
+    "productName": "Ківі",
+    "title": "КІВІ ВАГОВЕ",
+    "price": "104.90",
+    "image": "https://varus.ua/img/product/1140/1140/128923",
+    "category": "Фрукти свіжі"
+  },
+  {
+    "productName": "Борошно",
+    "title": "БОРОШНО ПШЕНИЧНЕ ДНІПРОМЛИН ВИЩОГО СОРТУ 5 КГ",
+    "price": "145.80",
+    "image": "https://varus.ua/img/carousel/1140/1140/217650/0",
+    "category": "Борошно"
+  },
+  {
+    "productName": "Гречка",
+    "title": "КРУПА ВИГОДА ГРЕЧАНА 900 Г",
+    "price": "27.40",
+    "image": "https://varus.ua/img/carousel/1140/1140/2498863/0",
+    "category": "Гречка"
+  },
+  {
+    "productName": "Рис круглий",
+    "title": "РИС ВИГОДА ШЛІФОВАНИЙ КРУГЛОЗЕРНІСТИЙ 0.9 КГ",
+    "price": "43.40",
+    "image": "https://varus.ua/img/carousel/1140/1140/2498869/0",
+    "category": "Рис"
+  },
+  {
+    "productName": "Рис довгий",
+    "title": "РИС ВИГОДА ШЛІФОВАНИЙ ДОВГОЗЕРНИСТИЙ 0.9 КГ",
+    "price": "44.60",
+    "image": "https://varus.ua/img/carousel/1140/1140/2498866/0",
+    "category": "Рис"
+  },
+  {
+    "productName": "Вівсянка",
+    "title": "КРУПА ВІВСЯНА ВИГОДА ПЛЮЩЕНА 500 Г",
+    "price": "16.90",
+    "image": "https://varus.ua/img/carousel/1140/1140/2639524/0",
+    "category": "Вівсяна крупа"
+  },
+  {
+    "productName": "Горох крупа",
+    "title": "ГОРОХ ВИГОДА КОЛОТИЙ 900 Г",
+    "price": "27.40",
+    "image": "https://varus.ua/img/carousel/1140/1140/2498878/0",
+    "category": "Бобові крупи"
+  },
+  {
+    "productName": "Майонез",
+    "title": "МАЙОНЕЗ ЩЕДРО САЛАТНИЙ 30% 190 Г",
+    "price": "18.80",
+    "image": "https://varus.ua/img/carousel/1140/1140/2564271/0",
+    "category": "Майонези"
+  },
+  {
+    "productName": "Олія",
+    "title": "ОЛІЯ СОНЯШНИКОВА СТОЖАР ШЕФ РАФІНОВАНА 850 МЛ",
+    "price": "80.60",
+    "image": "https://varus.ua/img/carousel/1140/1140/2631903/0",
+    "category": "Олія рослинна"
+  },
+  {
+    "productName": "Цукор",
+    "title": "ЦУКОР ВИГОДА БІЛИЙ КРИСТАЛІЧНИЙ, 1 КГ",
+    "price": "32.90",
+    "image": "https://varus.ua/img/carousel/1140/1140/2594095/0",
+    "category": "Цукор"
+  },
+  {
+    "productName": "Сіль",
+    "title": "СІЛЬ КУХОННА ВИГОДА КАМ'ЯНА МЕЛЕНА ПЕРШОГО СОРТУ 1000 Г",
+    "price": "12.90",
+    "image": "https://varus.ua/img/carousel/1140/1140/2635242/0",
+    "category": "Сіль"
+  },
+  {
+    "productName": "Броколі",
+    "title": "КАПУСТА БРОКОЛІ СВІЖОМОРОЖЕНА ВАГОВА",
+    "price": "199.00",
+    "image": "https://varus.ua/img/carousel/1140/1140/325715/0",
+    "category": "Овочі заморожені"
+  },
+  {
+    "productName": "Суміш овочей",
+    "title": "СУМІШ ОВОЧЕВА ДЛЯ ОМЛЕТУ ЗАМОРОЖЕНА, ВАГОВА",
+    "price": "135.00",
+    "image": "https://varus.ua/img/product/1140/1140/2577434",
+    "category": "Овочі заморожені"
+  },
+  {
+    "productName": "Пом'якшувач для тканин",
+    "title": "ОПОЛІСКУВАЧ-КОНДИЦІОНЕР ДЛЯ БІЛИЗНИ SILAN FRESH SKY 880 МЛ",
+    "price": "105.70",
+    "image": "https://varus.ua/img/carousel/1140/1140/2636461/0",
+    "category": "Кондиціонери для білизни"
+  },
+  {
+    "productName": "Гель для прання",
+    "title": "ГЕЛЬ ДЛЯ ПРАННЯ WASH&FREE УНІВЕРСАЛЬНИЙ 2 Л",
+    "price": "41.00",
+    "image": "https://varus.ua/img/carousel/1140/1140/2639547/0",
+    "category": "Рідкі засоби для прання"
+  },
+  {
+    "productName": "Білизна",
+    "title": "БІЛИЗНА ЧИСТА ВИГОДА! 900 Г",
+    "price": "123.50",
+    "image": "https://varus.ua/img/carousel/1140/1140/2549214/0",
+    "category": "Плямовивідники та відбілювачі"
+  },
+  {
+    "productName": "Крот",
+    "title": "ЗАСІБ ДЛЯ ЧИЩЕННЯ ТРУБ МР КРОТ КОНЦЕНТРАТ СВ 500МЛ УКРАЇНА",
+    "price": "219.00",
+    "image": "https://varus.ua/img/product/1140/1140/173724",
+    "category": "Засоби для прибирання та чищення"
+  },
+  {
+    "productName": "Зубна паста",
+    "title": "ПАСТА ЗУБНА COLGATE TINGLING MINT MAXCLEAN 75 МЛ",
+    "price": "93.90",
+    "image": "https://varus.ua/img/carousel/1140/1140/2632673/0",
+    "category": "Зубні пасти"
+  },
+  {
+    "productName": "Прокладки щоденні",
+    "title": "ПРОКЛАДКИ KOTEX DEO NORMAL PLUS ЩОДЕННІ 56 ШТ",
+    "price": "119.90",
+    "image": "https://varus.ua/img/product/1140/1140/2628403",
+    "category": "Прокладки"
+  },
+  {
+    "productName": "Прокладки для критичних днів",
+    "title": "ПРОКЛАДКИ ГІГІЄНІЧНІ KOTEX ULTRA НОРМАЛ 20 ШТ.",
+    "price": "71.90",
+    "image": "https://varus.ua/img/product/1140/1140/231835",
+    "category": "Прокладки"
+  },
+  {
+    "productName": "Дезодорант",
+    "title": "ДЕЗОДОРАНТ OLD SPICE DEEP SEA 50 МЛ",
+    "price": "142.80",
+    "image": "https://varus.ua/img/carousel/1140/1140/2629405/0",
+    "category": "Дезодоранти та антиперспіранти"
+  },
+  {
+    "productName": "Туалетний папір",
+    "title": "ПАПІР ТУАЛЕТНИЙ VARTO SOFT ТРИШАРОВИЙ БІЛИЙ 4ШТ",
+    "price": "54.00",
+    "image": "https://varus.ua/img/carousel/1140/1140/2617465/0",
+    "category": "Туалетний папір"
+  },
+  {
+    "productName": "Рушники",
+    "title": "РУШНИКИ RUTA EXTRA ABSORB SELECTA ПАПЕРОВІ 3-ШАРОВІ 1 ШТ",
+    "price": "96.70",
+    "image": "https://varus.ua/img/carousel/1140/1140/2569101/0",
+    "category": "Серветки та рушники"
+  },
+  {
+    "productName": "Ласощі",
+    "title": "ЛАСОЩІ КЛУБ 4 ЛАПИ ІНДИЧКА ТА ЯГНЯТИНА ДЛЯ КОТІВ 5 Г",
+    "price": "16.50",
+    "image": "https://varus.ua/img/carousel/1140/1140/2604835/0",
+    "category": "Ласощі для тварин"
+  }
+]
