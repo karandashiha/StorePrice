@@ -1,6 +1,7 @@
 const puppeteer = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 const fs = require("fs");
+const path = require("path");
 
 puppeteer.use(StealthPlugin());
 
@@ -23,8 +24,6 @@ async function scrapeProduct(url) {
         document.querySelector(".sf-price__regular")?.innerText || "";
       const price = priceText.replace(/[^\d.,]/g, "").replace(",", ".");
       const image = document.querySelector(".sf-image picture img")?.src;
-      //const category = document.querySelector('.breadcrumbs a'); // або уточни правильний селектор
-      // const categoryText = category?.[category.length - 2]?.innerText.trim() || 'Категорія не знайдена';
 
       const categories = document.querySelectorAll(
         ".sf-breadcrumbs__breadcrumb"
@@ -54,19 +53,23 @@ async function scrapeProduct(url) {
 }
 
 async function scrapeProductsFromJson() {
-  const products = JSON.parse(
-    fs.readFileSync(
-      "C:/Users/Kathryn/Desktop/Порівняння цін_ЧатБОТ/ParserProducts/StorePrice/Varus/json/productsVarus.json",
-      "utf8"
-    )
-  );
-  const results = [];
+  const jsonFolderPath =
+    "C:/Users/Kathryn/Desktop/Порівняння цін_ЧатБОТ/ParserProducts/StorePrice/Varus/json";
+
   // Читання старих результатів, якщо файл існує
+  const productsPath = path.join(jsonFolderPath, "productsVarus.json");
+  const scrapedResultsPath = path.join(
+    jsonFolderPath,
+    "scrapedResultsVarus.json"
+  );
+
+  const products = JSON.parse(fs.readFileSync(productsPath, "utf8"));
+
+  const results = [];
   let scrapedResults = [];
-  if (fs.existsSync("scrapedResultsVarus.json")) {
-    scrapedResults = JSON.parse(
-      fs.readFileSync("scrapedResultsVarus.json", "utf8")
-    );
+
+  if (fs.existsSync(scrapedResultsPath)) {
+    scrapedResults = JSON.parse(fs.readFileSync(scrapedResultsPath, "utf8"));
   }
 
   // Створюємо мапу для оновлення результатів
@@ -115,8 +118,9 @@ async function scrapeProductsFromJson() {
 
   console.log("Результати парсингу:", JSON.stringify(results, null, 2));
   fs.writeFileSync(
-    "scrapedResultsVarus.json",
-    JSON.stringify(results, null, 2)
+    scrapedResultsPath,
+    JSON.stringify(results, null, 2),
+    "utf8"
   );
 }
 

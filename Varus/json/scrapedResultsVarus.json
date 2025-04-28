@@ -44,7 +44,7 @@
   {
     "productName": "Огірок",
     "title": "ОГІРОК ТЕПЛИЧНИЙ ВАГОВИЙ",
-    "price": "99.90",
+    "price": "99.00",
     "image": "https://varus.ua/img/product/1140/1140/2507408",
     "category": "Овочі свіжі"
   },
@@ -58,14 +58,14 @@
   {
     "productName": "Капуста",
     "title": "КАПУСТА ВАГОВА",
-    "price": "61.90",
+    "price": "84.90",
     "image": "https://varus.ua/img/product/1140/1140/145844",
     "category": "Овочі свіжі"
   },
   {
     "productName": "Перець солодкий",
     "title": "ПЕРЕЦЬ СОЛОДКИЙ В АСОРТИМЕНТІ, ВАГОВИЙ",
-    "price": "104.00",
+    "price": "119.90",
     "image": "https://varus.ua/img/product/1140/1140/150168",
     "category": "Овочі свіжі"
   },
@@ -156,7 +156,7 @@
   {
     "productName": "Ківі",
     "title": "КІВІ ВАГОВЕ",
-    "price": "104.90",
+    "price": "119.90",
     "image": "https://varus.ua/img/product/1140/1140/128923",
     "category": "Фрукти свіжі"
   },
@@ -246,15 +246,15 @@
   },
   {
     "productName": "Пом'якшувач для тканин",
-    "title": "ОПОЛІСКУВАЧ-КОНДИЦІОНЕР ДЛЯ БІЛИЗНИ SILAN FRESH SKY 880 МЛ",
-    "price": "105.70",
-    "image": "https://varus.ua/img/carousel/1140/1140/2636461/0",
+    "title": "ОПОЛІСКУВАЧ-КОНДИЦІОНЕР ДЛЯ БІЛИЗНИ SILAN AROMATHERAPY FASCINATING FRANGIPANI 770 МЛ",
+    "price": "738.00",
+    "image": "https://varus.ua/img/carousel/1140/1140/2636456/0",
     "category": "Кондиціонери для білизни"
   },
   {
     "productName": "Гель для прання",
     "title": "ГЕЛЬ ДЛЯ ПРАННЯ WASH&FREE УНІВЕРСАЛЬНИЙ 2 Л",
-    "price": "41.00",
+    "price": "138.00",
     "image": "https://varus.ua/img/carousel/1140/1140/2639547/0",
     "category": "Рідкі засоби для прання"
   },
@@ -268,7 +268,7 @@
   {
     "productName": "Крот",
     "title": "ЗАСІБ ДЛЯ ЧИЩЕННЯ ТРУБ МР КРОТ КОНЦЕНТРАТ СВ 500МЛ УКРАЇНА",
-    "price": "219.00",
+    "price": "117.00",
     "image": "https://varus.ua/img/product/1140/1140/173724",
     "category": "Засоби для прибирання та чищення"
   },
@@ -282,7 +282,7 @@
   {
     "productName": "Прокладки щоденні",
     "title": "ПРОКЛАДКИ KOTEX DEO NORMAL PLUS ЩОДЕННІ 56 ШТ",
-    "price": "119.90",
+    "price": "60.70",
     "image": "https://varus.ua/img/product/1140/1140/2628403",
     "category": "Прокладки"
   },
@@ -302,15 +302,15 @@
   },
   {
     "productName": "Туалетний папір",
-    "title": "ПАПІР ТУАЛЕТНИЙ VARTO SOFT ТРИШАРОВИЙ БІЛИЙ 4ШТ",
-    "price": "54.00",
-    "image": "https://varus.ua/img/carousel/1140/1140/2617465/0",
+    "title": "ПАПІР ТУАЛЕТНИЙ СНІЖНА ПАНДА CLASSIC 2-Х ШАРОВИЙ 4 ШТ",
+    "price": "123.00",
+    "image": "https://varus.ua/img/carousel/1140/1140/2503680/0",
     "category": "Туалетний папір"
   },
   {
     "productName": "Рушники",
     "title": "РУШНИКИ RUTA EXTRA ABSORB SELECTA ПАПЕРОВІ 3-ШАРОВІ 1 ШТ",
-    "price": "96.70",
+    "price": "60.70",
     "image": "https://varus.ua/img/carousel/1140/1140/2569101/0",
     "category": "Серветки та рушники"
   },

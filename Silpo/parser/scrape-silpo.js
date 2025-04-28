@@ -1,6 +1,7 @@
 const puppeteer = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 const fs = require("fs");
+const path = require("path");
 
 puppeteer.use(StealthPlugin());
 
@@ -49,19 +50,23 @@ async function scrapeProduct(url) {
 }
 
 async function scrapeProductsFromJson() {
-  const products = JSON.parse(
-    fs.readFileSync(
-      "C:/Users/Kathryn/Desktop/Порівняння цін_ЧатБОТ/ParserProducts/StorePrice/Silpo/json/productsSilpo.json",
-      "utf8"
-    )
-  );
-  const results = [];
+  const jsonFolderPath =
+    "C:/Users/Kathryn/Desktop/Порівняння цін_ЧатБОТ/ParserProducts/StorePrice/Silpo/json";
+
   // Читання старих результатів, якщо файл існує
+  const productsPath = path.join(jsonFolderPath, "productsSilpo.json");
+  const scrapedResultsPath = path.join(
+    jsonFolderPath,
+    "scrapedResultsSilpo.json"
+  );
+
+  const products = JSON.parse(fs.readFileSync(productsPath, "utf8"));
+
+  const results = [];
   let scrapedResults = [];
-  if (fs.existsSync("scrapedResultsSilpo.json")) {
-    scrapedResults = JSON.parse(
-      fs.readFileSync("scrapedResultsSilpo.json", "utf8")
-    );
+
+  if (fs.existsSync(scrapedResultsPath)) {
+    scrapedResults = JSON.parse(fs.readFileSync(scrapedResultsPath, "utf8"));
   }
 
   // Створюємо мапу для оновлення результатів
@@ -110,8 +115,9 @@ async function scrapeProductsFromJson() {
 
   console.log("Результати парсингу:", JSON.stringify(results, null, 2));
   fs.writeFileSync(
-    "scrapedResultsSilpo.json",
-    JSON.stringify(results, null, 2)
+    scrapedResultsPath,
+    JSON.stringify(results, null, 2),
+    "utf8"
   );
 }
 
