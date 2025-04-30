@@ -13,30 +13,37 @@ async function scrapeProduct(url) {
     console.log("🚀 Відкриваємо:", url);
     await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
 
-    // Чекаємо, поки завантажиться товар
-    await page.waitForSelector(".product-page__title", { timeout: 10000 }); // Можливо збільшимо час очікування
+    await page.waitForSelector(".product-page__title", { timeout: 10000 });
 
     const data = await page.evaluate(() => {
-      const title = document
-        .querySelector(".product-page__title")
-        ?.innerText.trim();
+      const title =
+        document.querySelector(".product-page__title")?.innerText.trim() || "";
       const priceText =
         document.querySelector(".product-page-price__main")?.innerText || "";
       const price = priceText.replace(/[^\d.,]/g, "").replace(",", ".");
-      const image = document.querySelector(".product-img")?.src;
-      const categories = document.querySelectorAll(".breadcrumbs-list__item a");
-      const category = categories[categories.length - 3]?.innerText.trim();
 
-      return {
-        title,
-        price,
-        image,
-        category,
-      };
+      // Пробуємо знайти картинку різними способами
+      let image = document.querySelector(".product-img")?.src;
+      if (!image) {
+        const pictureImg = document.querySelector(".product-img picture img");
+        image = pictureImg?.getAttribute("src") || "";
+      }
+
+      const breadcrumbs = document.querySelectorAll(
+        ".breadcrumbs-list__item a"
+      );
+      const category =
+        breadcrumbs.length >= 3
+          ? breadcrumbs[breadcrumbs.length - 3].innerText.trim()
+          : "";
+
+      return { title, price, image, category };
     });
 
     if (!data.title || !data.price) {
       console.log("❌ Не вдалося отримати дані для цього товару:", url);
+      await browser.close();
+      return null;
     }
 
     console.log("✅ Отримано:", data);
@@ -53,7 +60,6 @@ async function scrapeProductsFromJson() {
   const jsonFolderPath =
     "C:/Users/Kathryn/Desktop/Порівняння цін_ЧатБОТ/ParserProducts/StorePrice/Silpo/json";
 
-  // Читання старих результатів, якщо файл існує
   const productsPath = path.join(jsonFolderPath, "productsSilpo.json");
   const scrapedResultsPath = path.join(
     jsonFolderPath,
@@ -61,59 +67,57 @@ async function scrapeProductsFromJson() {
   );
 
   const products = JSON.parse(fs.readFileSync(productsPath, "utf8"));
-
-  const results = [];
   let scrapedResults = [];
 
   if (fs.existsSync(scrapedResultsPath)) {
     scrapedResults = JSON.parse(fs.readFileSync(scrapedResultsPath, "utf8"));
   }
 
-  // Створюємо мапу для оновлення результатів
   const resultsMap = new Map();
-  scrapedResults.forEach((item) => resultsMap.set(item.productName, item));
+  scrapedResults.forEach((item) => resultsMap.set(item.url, item));
 
   for (const category in products) {
     const categoryProducts = products[category];
 
     for (const product of categoryProducts) {
-      if (product.url) {
-        const productData = await scrapeProduct(product.url);
-        if (productData) {
-          // Перевірка чи товар вже є в результатах
-          if (resultsMap.has(product.productName)) {
-            const existingData = resultsMap.get(product.productName);
-
-            // Якщо ціна або інші дані змінилися, оновлюємо
-            if (
-              existingData.price !== productData.price ||
-              existingData.category !== productData.category
-            ) {
-              console.log(`💡 Оновлення товару: ${product.productName}`);
-              resultsMap.set(product.productName, {
-                productName: product.productName,
-                ...productData,
-              });
-            }
-          } else {
-            // Якщо товар новий, додаємо його в результати
-            console.log(`➕ Додавання нового товару: ${product.productName}`);
-            resultsMap.set(product.productName, {
-              productName: product.productName,
-              ...productData,
-            });
-          }
-        }
-      } else {
-        console.log(`❌ Пропускаємо товар без URL: ${product.productName}`);
+      if (!product.url) {
+        console.log(`❌ Пропущено товар без URL: ${product.productName}`);
+        continue;
       }
+
+      const productData = await scrapeProduct(product.url);
+      if (!productData) {
+        console.log(`⚠️ Пропущено (помилка): ${product.url}`);
+        continue;
+      }
+
+      const key = product.url;
+      const existingData = resultsMap.get(key);
+
+      if (
+        existingData &&
+        existingData.price === productData.price &&
+        existingData.category === productData.category
+      ) {
+        continue;
+      }
+
+      if (existingData) {
+        console.log(`♻️ Оновлення товару: ${product.productName}`);
+      } else {
+        console.log(`➕ Додавання нового товару: ${product.productName}`);
+      }
+
+      resultsMap.set(key, {
+        productName: product.productName,
+        url: product.url,
+        ...productData,
+      });
     }
   }
 
-  // Перетворюємо мапу назад в масив для запису в файл
-  results.push(...Array.from(resultsMap.values()));
-
-  console.log("Результати парсингу:", JSON.stringify(results, null, 2));
+  const results = Array.from(resultsMap.values());
+  console.log("\n✅ Збережено товарів:", results.length);
   fs.writeFileSync(
     scrapedResultsPath,
     JSON.stringify(results, null, 2),
