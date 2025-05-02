@@ -3,7 +3,7 @@
     "productName": "Молоко",
     "url": "https://silpo.ua/product/moloko-selianske-pytne-ultrapasteryzovane-2-5-28734",
     "title": "Молоко «Селянське» питне ультрапастеризоване 2,5%, 900г",
-    "price": "42.99",
+    "price": "48.49",
     "image": "https://images.silpo.ua/products/744x744/webp/fffd93c6-5f1b-4b5f-860c-e39c30f670f1.png",
     "category": "Молоко"
   },
@@ -27,7 +27,7 @@
     "productName": "Молоко",
     "url": "https://silpo.ua/product/moloko-ultrapasteryzovane-yagotynske-2-6-848613",
     "title": "Молоко ультрапастеризоване «Яготинське» 2,6%, 900г",
-    "price": "53.49",
+    "price": "56.49",
     "image": "https://images.silpo.ua/products/744x744/webp/9b96f8d4-6860-4f4a-b886-326c6bf6a6f9.png",
     "category": "Молоко"
   },
@@ -67,7 +67,7 @@
     "productName": "Творог",
     "url": "https://silpo.ua/product/syr-kyslomolochnyi-molokiia-5-838497",
     "title": "Сир кисломолочний «Молокія» 5%, 350г",
-    "price": "91.49",
+    "price": "59.99",
     "image": "https://images.silpo.ua/products/744x744/webp/a6c6ffe9-2fa6-46bd-b0aa-25320cf3aa42.jpg",
     "category": "Сир кисломолочний"
   },
@@ -107,7 +107,7 @@
     "productName": "Кефір",
     "url": "https://silpo.ua/product/kefir-molokiia-sonechko-2-5-p-e-702984",
     "title": "Кефір «Молокія» «Сонечко» 2,5% п/е, 900г",
-    "price": "52.49",
+    "price": "50.99",
     "image": "https://images.silpo.ua/products/744x744/webp/e84dfdb6-a1c4-4e58-a6fb-b0856e690a93.png",
     "category": "Кефір, ряжанка, айран"
   },
@@ -123,7 +123,7 @@
     "productName": "Огірок",
     "url": "https://silpo.ua/product/ogirok-ekstra-142342",
     "title": "Огірок екстра, 100г",
-    "price": "14.90",
+    "price": "6.32",
     "image": "https://images.silpo.ua/products/744x744/webp/d8776b28-ffe7-4cb3-ad7d-de37532eea57.png",
     "category": "Овочі"
   },
@@ -147,7 +147,7 @@
     "productName": "Перець солодкий",
     "url": "https://silpo.ua/product/perets-chervonyi-32887",
     "title": "Перець червоний, 100г",
-    "price": "19.68",
+    "price": "22.90",
     "image": "https://images.silpo.ua/products/744x744/webp/dd451510-588d-4bf1-afa7-c9b5b2eeeb4b.png",
     "category": "Овочі"
   },
@@ -203,7 +203,7 @@
     "productName": "Часник",
     "url": "https://silpo.ua/product/chasnyk-32595",
     "title": "Часник, 100г",
-    "price": "21.89",
+    "price": "19.48",
     "image": "https://images.silpo.ua/products/744x744/webp/19d61480-bfdd-4564-8083-a1b31fbc6de1.png",
     "category": "Овочі"
   },
@@ -211,7 +211,7 @@
     "productName": "Часник",
     "url": "https://silpo.ua/product/chasnyk-molodyi-97163",
     "title": "Часник молодий, 100г",
-    "price": "20.40",
+    "price": "18.36",
     "image": "https://images.silpo.ua/products/744x744/webp/1151d163-8a70-42c6-b7b0-b5b3ba09fafa.png",
     "category": "Овочі"
   },
@@ -219,7 +219,7 @@
     "productName": "Кабачок",
     "url": "https://silpo.ua/product/kabachok-51600",
     "title": "Кабачок, 100г",
-    "price": "9.90",
+    "price": "12.91",
     "image": "https://images.silpo.ua/products/744x744/webp/fb87deaf-eec3-467f-9544-1dc5aeed93f0.png",
     "category": "Овочі"
   },
@@ -244,7 +244,7 @@
     "url": "https://silpo.ua/product/mandaryn-murkot-810182",
     "title": "Мандарин Муркот, 100г",
     "price": "7.69",
-    "image": "https://images.silpo.ua/products/744x744/4101cf7d-0ac7-4388-8cf4-83ea4a8612d5.png",
+    "image": "https://images.silpo.ua/products/744x744/webp/4101cf7d-0ac7-4388-8cf4-83ea4a8612d5.png",
     "category": "Фрукти"
   },
   {
@@ -259,7 +259,7 @@
     "productName": "Лимон",
     "url": "https://silpo.ua/product/lymon-32550",
     "title": "Лимон, 100г",
-    "price": "14.90",
+    "price": "13.90",
     "image": "https://images.silpo.ua/products/744x744/webp/b539744c-f560-401b-92f8-30c70a04960a.png",
     "category": "Фрукти"
   },
@@ -267,7 +267,7 @@
     "productName": "Апельсин",
     "url": "https://silpo.ua/product/apelsyn-32546",
     "title": "Апельсин, 100г",
-    "price": "5.93",
+    "price": "6.26",
     "image": "https://images.silpo.ua/products/744x744/webp/6ad7b56f-dc6d-4577-9005-ce3220d4bf15.png",
     "category": "Фрукти"
   },
@@ -275,7 +275,7 @@
     "productName": "Ківі",
     "url": "https://silpo.ua/product/kivi-vagovyi-134544",
     "title": "Ківі ваговий, 100г",
-    "price": "12.37",
+    "price": "13.90",
     "image": "https://images.silpo.ua/products/744x744/webp/743428d1-1980-4420-a091-039daf132452.png",
     "category": "Фрукти"
   },
@@ -283,7 +283,7 @@
     "productName": "Борошно",
     "url": "https://silpo.ua/product/boroshno-khutorok-pshenychne-v-g-383351",
     "title": "Борошно «Хуторок» пшеничне в/ґ, 5кг",
-    "price": "139.00",
+    "price": "134.00",
     "image": "https://images.silpo.ua/products/744x744/webp/94fa782f-5866-473d-a482-4be50aec8639.png",
     "category": "Пшеничне борошно"
   },
@@ -339,7 +339,7 @@
     "productName": "Олія",
     "url": "https://silpo.ua/product/oliia-stozhar-soniashnykova-rafinovana-914671",
     "title": "Олія «СтоЖар» соняшникова рафінована, 0,85л",
-    "price": "73.99",
+    "price": "82.99",
     "image": "https://images.silpo.ua/products/744x744/webp/f0f7e2c3-eda7-45e0-966e-90f05ed36097.png",
     "category": "Соняшникова олія"
   },
@@ -347,7 +347,7 @@
     "productName": "Цукор",
     "url": "https://silpo.ua/product/tsukor-povna-chasha-bilyi-krystalichnyi-961206",
     "title": "Цукор «Повна Чаша»® білий кристалічний, 1кг",
-    "price": "33.98",
+    "price": "32.99",
     "image": "https://images.silpo.ua/products/744x744/webp/282a68cd-9df1-42f7-bace-45951b6b0dbe.png",
     "category": "Цукор"
   },
@@ -355,15 +355,15 @@
     "productName": "Сіль",
     "url": "https://silpo.ua/product/sil-kam-iana-kukhona-949968",
     "title": "Сіль кам'яна кухона, 1кг",
-    "price": "14.89",
-    "image": "https://images.silpo.ua/products/744x744/webp/815add2d-d446-496a-82b9-cb78709fe6a5.png",
+    "price": "15.99",
+    "image": "https://images.silpo.ua/products/744x744/webp/7a745423-9373-41b6-be0a-c00cc4ba5e6d.png",
     "category": "Сіль, цукор"
   },
   {
-    "productName": "Броколі",
+    "productName": "Капуста броколі",
     "url": "https://silpo.ua/product/kapusta-brokoli-svizhomorozhena-424000",
     "title": "Капуста броколі свіжоморожена, 100г",
-    "price": "11.90",
+    "price": "18.90",
     "image": "https://images.silpo.ua/products/744x744/webp/e1c78c17-a92f-47fd-a6fd-bd92f4799657.png",
     "category": "Овочі і фрукти заморожені"
   },
@@ -403,7 +403,7 @@
     "productName": "Гель для прання",
     "url": "https://silpo.ua/product/gel-dlia-prannia-wash-free-universalnyi-936302",
     "title": "Гель для прання Wash&Free універсальний, 2000г",
-    "price": "94.99",
+    "price": "89.00",
     "image": "https://images.silpo.ua/products/744x744/webp/9a4130e8-ff68-43ae-b577-1e083d86ddb1.png",
     "category": "Пральні порошки, гелі, капсули"
   },
@@ -419,7 +419,7 @@
     "productName": "Крот",
     "url": "https://silpo.ua/product/zasib-sana-krot-dlia-rozchynennia-zabrudnen-u-trubakh-546466",
     "title": "Засіб «Сана Крот» для розчинення забруднень у трубах, 1,05кг",
-    "price": "32.99",
+    "price": "33.99",
     "image": "https://images.silpo.ua/products/744x744/webp/2002d43e-c8f7-40e7-9287-684085fd1f53.png",
     "category": "Для прибирання"
   },
@@ -427,7 +427,7 @@
     "productName": "Зубна паста",
     "url": "https://silpo.ua/product/zubna-pasta-blend-a-med-3d-white-arktychna-svizhist-927424",
     "title": "Зубна паста Blend-a-med 3D White Арктична свіжість, 75мл",
-    "price": "69.00",
+    "price": "69.99",
     "image": "https://images.silpo.ua/products/744x744/webp/7760a199-0565-4619-9bab-66acb8d7b817.png",
     "category": "Зубна паста та ополіскувачі"
   },
@@ -443,7 +443,7 @@
     "productName": "Прокладки щоденні",
     "url": "https://silpo.ua/product/prokladky-shchodenni-lidie-deo-66205",
     "title": "Прокладки щоденні Lidie Deo, 50шт",
-    "price": "69.90",
+    "price": "69.99",
     "image": "https://images.silpo.ua/products/744x744/webp/13240784-4e2c-433f-8706-f444f4f37371.png",
     "category": "Прокладки, тампони, для інтимної гігієни"
   },
@@ -491,7 +491,7 @@
     "productName": "Туалетний папір",
     "url": "https://silpo.ua/product/papir-tualetnyi-snizhna-panda-klasik-502544",
     "title": "Папір туалетний «Сніжна панда» «Класік», 4шт",
-    "price": "76.99",
+    "price": "59.99",
     "image": "https://images.silpo.ua/products/744x744/webp/d7a750f8-bdb2-4725-991f-71d1968b3c32.png",
     "category": "Туалетний папір"
   },

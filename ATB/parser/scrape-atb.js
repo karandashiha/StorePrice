@@ -30,8 +30,9 @@ async function scrapeProduct(url) {
         ".breadcrumbs__list .breadcrumbs__item a"
       );
       const category =
-        breadcrumbs[breadcrumbs.length - 2]?.innerText.trim() || "";
-
+        breadcrumbs.length >= 3
+          ? breadcrumbs[2].innerText.trim()
+          : ""; 
       return { title, price, image, category };
     });
 

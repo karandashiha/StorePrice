@@ -21,7 +21,9 @@ app.get("/products/:category", (req, res) => {
 app.get("/product", (req, res) => {
   const { productName, category } = req.query;
   if (!productName || !category) {
-    return res.status(400).json({ error: "Потрібно вказати title і category" });
+    return res
+      .status(400)
+      .json({ error: "Потрібно вказати productName  і category" });
   }
 
   const result = findCheapestProductByProductNameAndCategory(
