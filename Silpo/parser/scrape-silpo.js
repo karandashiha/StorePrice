@@ -16,12 +16,19 @@ async function scrapeProduct(url) {
     await page.waitForSelector(".product-page__title", { timeout: 10000 });
 
     const data = await page.evaluate(() => {
-      const title =
+      let title =
         document.querySelector(".product-page__title")?.innerText.trim() || "";
       const priceText =
         document.querySelector(".product-page-price__main")?.innerText || "";
-      const price = priceText.replace(/[^\d.,]/g, "").replace(",", ".");
 
+      //Нормалізація цін Сільпо: перерахунок з 100г на 1кг у парсері
+      let price = priceText.replace(/[^\d.,]/g, "").replace(",", ".");
+      price = parseFloat(price);
+
+      if (/100\s?г/.test(title.toLowerCase())) {
+        price = parseFloat((price * 10).toFixed(2)); // перерахунок на 1 кг
+        title = title.replace(/,\s?100\s?г/i, "").trim();
+      }
       // Пробуємо знайти картинку різними способами
       let image = document.querySelector(".product-img")?.src;
       if (!image) {
