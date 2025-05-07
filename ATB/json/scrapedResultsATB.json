@@ -3,7 +3,7 @@
     "productName": "Молоко",
     "url": "https://www.atbmarket.com/product/moloko-09kg-svoa-linia-ultrapasterizovane-25-tetra-fino-z",
     "title": "Молоко 0,9кг Своя Лінія ультрапастеризоване 2,5% тетра-фино (Ж)",
-    "price": "44.60",
+    "price": 44.6,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/90221/catalog_product_gal_mob_90221.jpg",
     "category": "Молоко"
   },
@@ -11,15 +11,23 @@
     "productName": "Творог",
     "url": "https://www.atbmarket.com/product/sir-kislomolocnij-350-g-bilocerkivskij-5-pet",
     "title": "Сир кисломолочний 350 г Білоцерківський 5% п/ет",
-    "price": "83.80",
+    "price": 80.7,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/89585/catalog_product_gal_mob_89585.jpg",
+    "category": "Сир кисломолочний"
+  },
+  {
+    "productName": "Творог",
+    "url": "https://www.atbmarket.com/product/sir-kislomolocnij-350-g-svoa-linia-5-paket",
+    "title": "Сир кисломолочний 350 г Своя лінія 5% пакет",
+    "price": 55.5,
+    "image": "https://src.zakaz.atbmarket.com/cache/photos/53155/catalog_product_gal_mob_53155.jpg",
     "category": "Сир кисломолочний"
   },
   {
     "productName": "Сметана",
     "url": "https://www.atbmarket.com/product/smetana-200-g-svoa-linia-15-pet",
     "title": "Сметана 200 г Своя лінія 15% п/ет",
-    "price": "25.40",
+    "price": 25.4,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/54715/catalog_product_gal_mob_54715.jpg",
     "category": "Сметана"
   },
@@ -27,7 +35,7 @@
     "productName": "Сметана",
     "url": "https://www.atbmarket.com/product/smetana-200-g-svoa-linia-20-pet",
     "title": "Сметана 200 г Своя лінія 20% п/ет",
-    "price": "25.90",
+    "price": 25.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/55097/catalog_product_gal_mob_55097.jpg",
     "category": "Сметана"
   },
@@ -35,7 +43,7 @@
     "productName": "Йогурт",
     "url": "https://www.atbmarket.com/product/jogurt-300-g-molokia-gustij-bilij-po-grecki-8",
     "title": "Йогурт 300 г Молокія густий білий по-грецьки 8%",
-    "price": "48.40",
+    "price": 48.4,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/23195/catalog_product_gal_mob_23195.jpg",
     "category": "Йогурти"
   },
@@ -43,7 +51,7 @@
     "productName": "Кефір",
     "url": "https://www.atbmarket.com/product/kefir-09-kg-agotinskij-25",
     "title": "Кефір 0,9 кг Яготинський 2,5%",
-    "price": "53.40",
+    "price": 53.4,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/550/catalog_product_gal_mob_550.jpg",
     "category": "Кисломолочні напої"
   },
@@ -51,7 +59,7 @@
     "productName": "Кефір",
     "url": "https://www.atbmarket.com/product/kefir-09-kg-sodennij-zbir-25-peg",
     "title": "Кефір 0,9 кг Щоденний збір 2,5% п/е(Г)",
-    "price": "43.70",
+    "price": 43.7,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/89609/catalog_product_gal_mob_89609.jpg",
     "category": "Кисломолочні напої"
   },
@@ -59,7 +67,7 @@
     "productName": "Огірок",
     "url": "https://www.atbmarket.com/product/ogirki-1-gat",
     "title": "Огірки",
-    "price": "69.89",
+    "price": 69.89,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/6775/catalog_product_gal_mob_6775.jpg",
     "category": "Овочі"
   },
@@ -67,7 +75,7 @@
     "productName": "Помідор",
     "url": "https://www.atbmarket.com/product/tomati-teplicni-1-gatunok",
     "title": "Томати тепличні",
-    "price": "73.49",
+    "price": 73.49,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/11/catalog_product_gal_mob_11.png",
     "category": "Овочі"
   },
@@ -75,7 +83,7 @@
     "productName": "Перець солодкий",
     "url": "https://www.atbmarket.com/product/perec-solodkij-cervonij-1-gat",
     "title": "Перець солодкий червоний",
-    "price": "149.95",
+    "price": 139.95,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/1876/catalog_product_gal_mob_1876.png",
     "category": "Овочі"
   },
@@ -83,7 +91,7 @@
     "productName": "Перець солодкий",
     "url": "https://www.atbmarket.com/product/perec-solodkij-zovtij-1-gat",
     "title": "Перець солодкий жовтий 1 гат",
-    "price": "149.95",
+    "price": 159.95,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/2822/catalog_product_gal_mob_2822.jpg",
     "category": "Овочі"
   },
@@ -91,7 +99,7 @@
     "productName": "Картопля",
     "url": "https://www.atbmarket.com/product/kartopla-1-gat",
     "title": "Картопля",
-    "price": "29.89",
+    "price": 29.89,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/27/catalog_product_gal_mob_27.png",
     "category": "Овочі"
   },
@@ -99,7 +107,7 @@
     "productName": "Морква",
     "url": "https://www.atbmarket.com/product/morkva-1gat",
     "title": "Морква",
-    "price": "37.89",
+    "price": 37.89,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/44/catalog_product_gal_mob_44.png",
     "category": "Овочі"
   },
@@ -107,7 +115,7 @@
     "productName": "Буряк",
     "url": "https://www.atbmarket.com/product/burak-1-gat",
     "title": "Буряк 1 гат",
-    "price": "31.89",
+    "price": 31.89,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/58/catalog_product_gal_mob_58.png",
     "category": "Овочі"
   },
@@ -115,7 +123,7 @@
     "productName": "Цибуля",
     "url": "https://www.atbmarket.com/product/cibula-ripcasta-1-gat",
     "title": "Цибуля Ріпчаста",
-    "price": "28.95",
+    "price": 28.89,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/28/catalog_product_gal_mob_28.jpg",
     "category": "Овочі"
   },
@@ -123,7 +131,7 @@
     "productName": "Часник",
     "url": "https://www.atbmarket.com/product/casnik-import-1-gat",
     "title": "Часник імпорт",
-    "price": "144.95",
+    "price": 154.95,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/18573/catalog_product_gal_mob_18573.jpg",
     "category": "Овочі"
   },
@@ -131,7 +139,7 @@
     "productName": "Часник",
     "url": "https://www.atbmarket.com/product/casnik-rannij-1-gat",
     "title": "Часник ранній",
-    "price": "129.95",
+    "price": 129.95,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/11355/catalog_product_gal_mob_11355.jpg",
     "category": "Овочі"
   },
@@ -139,7 +147,7 @@
     "productName": "Кабачок",
     "url": "https://www.atbmarket.com/product/kabacki-1-gat",
     "title": "Кабачки",
-    "price": "109.95",
+    "price": 99.95,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/1855/catalog_product_gal_mob_1855.jpg",
     "category": "Овочі"
   },
@@ -147,7 +155,7 @@
     "productName": "Банан",
     "url": "https://www.atbmarket.com/product/banan-1-gat",
     "title": "Банан",
-    "price": "72.89",
+    "price": 71.89,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/18797/catalog_product_gal_mob_18797.jpg",
     "category": "Фрукти, ягоди"
   },
@@ -155,23 +163,15 @@
     "productName": "Яблуко",
     "url": "https://www.atbmarket.com/product/abluko-ukrainske",
     "title": "Яблуко Українське",
-    "price": "38.95",
+    "price": 44.95,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/60465/catalog_product_gal_mob_60465.png",
-    "category": "Фрукти, ягоди"
-  },
-  {
-    "productName": "Мандарини",
-    "url": "https://www.atbmarket.com/product/mandarini-1gat",
-    "title": "Мандарини",
-    "price": "74.95",
-    "image": "https://src.zakaz.atbmarket.com/cache/photos/19437/catalog_product_gal_mob_19437.jpg",
     "category": "Фрукти, ягоди"
   },
   {
     "productName": "Авокадо",
     "url": "https://www.atbmarket.com/product/avokado-haas-vagove-1-gat",
     "title": "Авокадо Хаас вагове 1 гат",
-    "price": "189.95",
+    "price": 179.95,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/6651/catalog_product_gal_mob_6651.jpg",
     "category": "Фрукти, ягоди"
   },
@@ -179,7 +179,7 @@
     "productName": "Лимон",
     "url": "https://www.atbmarket.com/product/limon-1-gat",
     "title": "Лимон",
-    "price": "99.89",
+    "price": 99.89,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/25/catalog_product_gal_mob_25.png",
     "category": "Фрукти, ягоди"
   },
@@ -187,7 +187,7 @@
     "productName": "Апельсин",
     "url": "https://www.atbmarket.com/product/apelsin-vag-1-gat",
     "title": "Апельсин",
-    "price": "58.95",
+    "price": 54.95,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/87/catalog_product_gal_mob_87.jpg",
     "category": "Фрукти, ягоди"
   },
@@ -195,7 +195,7 @@
     "productName": "Ківі",
     "url": "https://www.atbmarket.com/product/kivi-vagove-1gat",
     "title": "Ківі",
-    "price": "159.95",
+    "price": 159.95,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/1844/catalog_product_gal_mob_1844.png",
     "category": "Фрукти, ягоди"
   },
@@ -203,7 +203,7 @@
     "productName": "Борошно",
     "url": "https://www.atbmarket.com/product/borosno-5-kg-rozumnij-vibir-psenicne",
     "title": "Борошно 5 кг Розумний вибір пшеничне",
-    "price": "103.90",
+    "price": 103.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/744/catalog_product_gal_mob_744.jpg",
     "category": "Борошно"
   },
@@ -211,7 +211,7 @@
     "productName": "Гречка",
     "url": "https://www.atbmarket.com/product/krupa-1-kg-rozumnij-vibir-grecana",
     "title": "Крупа 1 кг Розумний вибір гречана",
-    "price": "31.30",
+    "price": 31.3,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/173/catalog_product_gal_mob_173.jpg",
     "category": "Крупи"
   },
@@ -219,7 +219,7 @@
     "productName": "Рис круглий",
     "url": "https://www.atbmarket.com/product/krupa-1-kg-rozumnij-vibir-ris-kruglozernistij-slifovanij",
     "title": "Крупа 1 кг Розумний вибір рис круглозернистий шлiфований",
-    "price": "50.70",
+    "price": 50.7,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/175/catalog_product_gal_mob_175.jpg",
     "category": "Крупи"
   },
@@ -227,7 +227,7 @@
     "productName": "Рис довгий",
     "url": "https://www.atbmarket.com/product/krupa-1-kg-rozumnij-vibir-ris-dovgozernistij-slifovanij",
     "title": "Крупа 1 кг Розумний вибір рис довгозернистий шлiфований",
-    "price": "49.50",
+    "price": 49.5,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/174/catalog_product_gal_mob_174.jpg",
     "category": "Крупи"
   },
@@ -235,7 +235,7 @@
     "productName": "Вівсянка",
     "url": "https://www.atbmarket.com/product/plastivci-400g-rozumnij-vibir-ekstrano1",
     "title": "Пластівці 400г Розумний вибір Екстра№1",
-    "price": "14.50",
+    "price": 13.5,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/82005/catalog_product_gal_mob_82005.jpg",
     "category": "Сухі сніданки"
   },
@@ -243,7 +243,7 @@
     "productName": "Горох крупа",
     "url": "https://www.atbmarket.com/product/krupa-1-kg-rozumnij-vibir-goroh",
     "title": "Крупа 1 кг Розумний вибір горох",
-    "price": "30.50",
+    "price": 27.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/331/catalog_product_gal_mob_331.jpg",
     "category": "Крупи"
   },
@@ -251,7 +251,7 @@
     "productName": "Майонез",
     "url": "https://www.atbmarket.com/product/majonez-350-g-rozumnij-vibir-50-fpak",
     "title": "Майонез 350г Розумний вибір Улюблений 50 % ф/пак",
-    "price": "31.50",
+    "price": 31.5,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/83411/catalog_product_gal_mob_83411.jpg",
     "category": "Майонез"
   },
@@ -259,7 +259,7 @@
     "productName": "Олія",
     "url": "https://www.atbmarket.com/product/olia-085-l-stozar-sonasnikova-rafinovana-pet",
     "title": "Олія 0,85 л (782 г) Стожар соняшникова рафінована ПЕТ",
-    "price": "80.54",
+    "price": 80.54,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/57533/catalog_product_gal_mob_57533.png",
     "category": "Олія та Оцет"
   },
@@ -267,7 +267,7 @@
     "productName": "Цукор",
     "url": "https://www.atbmarket.com/product/cukor-1-kg-fasovanij-pisok",
     "title": "Цукор 1 кг",
-    "price": "32.90",
+    "price": 32.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/81069/catalog_product_gal_mob_81069.jpg",
     "category": "Цукор"
   },
@@ -275,7 +275,7 @@
     "productName": "Сіль",
     "url": "https://www.atbmarket.com/product/sil-1-kg-kuhonna-kamana-melena-gatunok-persij-mup",
     "title": "Сіль 1 кг Розумний вибір кухонна кам’яна мелена ґатунок перший м/уп",
-    "price": "12.90",
+    "price": 12.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/29551/catalog_product_gal_mob_29551.jpg",
     "category": "Приправи та маринади"
   },
@@ -283,7 +283,7 @@
     "productName": "Капуста броколі",
     "url": "https://www.atbmarket.com/product/kapusta-brokoli-400g-svoa-linia-svidkozamorozena",
     "title": "Капуста броколі 400г Своя Лінія швидкозаморожена",
-    "price": "72.40",
+    "price": 72.4,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/7192/catalog_product_gal_mob_7192.jpg",
     "category": "Овочі та фрукти свіжозаморожені"
   },
@@ -291,7 +291,7 @@
     "productName": "Суміш овочей",
     "url": "https://www.atbmarket.com/product/sumis-ovoceva-400g-svoa-linia-meksikanska-svidkozamorozena",
     "title": "Суміш овочева 400г Своя Лінія «Мексиканська» швидкозаморожена",
-    "price": "56.90",
+    "price": 56.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/7309/catalog_product_gal_mob_7309.jpg",
     "category": "Овочі та фрукти свіжозаморожені"
   },
@@ -299,23 +299,15 @@
     "productName": "Суміш овочей",
     "url": "https://www.atbmarket.com/product/sumis-ovoceva-400g-svoa-linia-italijska-svidkozamorozena",
     "title": "Сумiш овочeва 400г Своя Лiнiя «Італійська» швидкозаморожена",
-    "price": "69.30",
+    "price": 69.3,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/7306/catalog_product_gal_mob_7306.jpg",
     "category": "Овочі та фрукти свіжозаморожені"
-  },
-  {
-    "productName": "Пом'якшувач для тканин",
-    "url": "https://www.atbmarket.com/product/pomaksuvac-dla-tkanin-085-l-lenor-spring-awakening-pflakon",
-    "title": "Пом'якшувач для тканин 0,85 л Lenor Spring Awakening п/флакон",
-    "price": "98.90",
-    "image": "https://src.zakaz.atbmarket.com/cache/photos/61673/catalog_product_gal_mob_61673.jpeg",
-    "category": "Пральні порошки та засоби для прання"
   },
   {
     "productName": "Гель для прання",
     "url": "https://www.atbmarket.com/product/gel-dla-pranna-21-kg-wash-free-universalnij",
     "title": "Гель для прання 2,1 кг WASH & FREE Універсальний",
-    "price": "143.90",
+    "price": 150.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/13926/catalog_product_gal_mob_13926.jpg",
     "category": "Пральні порошки та засоби для прання"
   },
@@ -323,7 +315,7 @@
     "productName": "Білизна",
     "url": "https://www.atbmarket.com/product/zasib-vibiluucij-09-kg-rozumnij-vibir-bilizna-pflakon?query=%D0%B1%D1%96%D0%BB%D0%B8%D0%B7%D0%BD%D0%B0",
     "title": "Засіб вибілюючий 0,9 кг Розумний вибір Білизна п/флакон",
-    "price": "21.70",
+    "price": 21.7,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/50067/catalog_product_gal_mob_50067.jpg",
     "category": "Пральні порошки та засоби для прання"
   },
@@ -331,7 +323,7 @@
     "productName": "Крот",
     "url": "https://www.atbmarket.com/product/zasib-dla-procisenna-zlivnih-trub-1l-mister-krit-rozumnij-vibir",
     "title": "Засіб для прочищення зливних труб 1л Містер кріт Розумний вибір",
-    "price": "37.20",
+    "price": 37.2,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/51883/catalog_product_gal_mob_51883.jpg",
     "category": "Засоби для чищення"
   },
@@ -339,7 +331,7 @@
     "productName": "Зубна паста",
     "url": "https://www.atbmarket.com/product/pasta-zubna-75-ml-blend-a-med-3dwhite-arkticna-svizist-kup",
     "title": "Паста зубна 75 мл Blend-a-med 3DWhite Арктична Свіжість к/уп",
-    "price": "88.90",
+    "price": 88.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/71249/catalog_product_gal_mob_71249.jpg",
     "category": "Гігієна ротової порожнини"
   },
@@ -347,7 +339,7 @@
     "productName": "Прокладки щоденні",
     "url": "https://www.atbmarket.com/product/prokladki-sodenni-455-st-lidie-deo-camomile-promo",
     "title": "Прокладки щоденні 45+5 шт Lidie Deo Camomile (промо)",
-    "price": "66.70",
+    "price": 66.7,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/37835/catalog_product_gal_mob_37835.jpg",
     "category": "Гігієнічні прокладки/тампони"
   },
@@ -355,7 +347,7 @@
     "productName": "Прокладки для критичних днів",
     "url": "https://www.atbmarket.com/product/prokladki-10-st-bella-for-teens-ultra-relax-deo",
     "title": "Прокладки 10 шт Bella for Teens Ultra Relax deo",
-    "price": "49.20",
+    "price": 49.2,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/20959/catalog_product_gal_mob_20959.jpg",
     "category": "Гігієнічні прокладки/тампони"
   },
@@ -363,7 +355,7 @@
     "productName": "Прокладки для критичних днів",
     "url": "https://www.atbmarket.com/product/prokladki-10-st-bella-for-teens-ultra-sensitive-extra-soft",
     "title": "Прокладки 10 шт Bella for Teens Ultra Sensitive extra soft",
-    "price": "49.50",
+    "price": 49.5,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/3440/catalog_product_gal_mob_3440.jpg",
     "category": "Гігієнічні прокладки/тампони"
   },
@@ -371,7 +363,7 @@
     "productName": "Дезодорант",
     "url": "https://www.atbmarket.com/product/dezodorant-50-ml-nivea-deo-efekt-pudri",
     "title": "Дезодорант 50 мл Nivea Deo Ефект пудри",
-    "price": "91.90",
+    "price": 91.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/64831/catalog_product_gal_mob_64831.png",
     "category": "Дезодоранти"
   },
@@ -379,7 +371,7 @@
     "productName": "Туалетний папір",
     "url": "https://www.atbmarket.com/product/papir-tualetnij-4-st-svoa-linia-elite-soft-aromatizovanij-dvosarovij-z-kolorovim-tisnennam",
     "title": "Папір туалетний 4 шт Своя Лінія Elite Soft ароматизований двошаровий з кольоровим тисненням",
-    "price": "50.70",
+    "price": 48.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/75161/catalog_product_gal_mob_75161.jpg",
     "category": "Туалетний папір"
   },
@@ -387,7 +379,7 @@
     "productName": "Туалетний папір",
     "url": "https://www.atbmarket.com/product/papir-tualetnij-4-st-snizna-panda-superabsorb-celuloznij-dvosarovij",
     "title": "Папір туалетний 4 шт Сніжна Панда СуперАбсорб целюлозний двошаровий",
-    "price": "74.40",
+    "price": 46.5,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/35157/catalog_product_gal_mob_35157.jpg",
     "category": "Туалетний папір"
   },
@@ -395,7 +387,7 @@
     "productName": "Рушники",
     "url": "https://www.atbmarket.com/product/rusniki-paperovi-2-st-svoa-linia-2-sarovi-bili",
     "title": "Рушники паперові 2 шт Своя лінія 2-шарові білі",
-    "price": "30.90",
+    "price": 49.4,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/56655/catalog_product_gal_mob_56655.png",
     "category": "Серветки, рушники"
   },
@@ -403,7 +395,7 @@
     "productName": "Ласощі",
     "url": "https://www.atbmarket.com/product/lasosi-dla-kotiv-5-g-club-4-paws-premium-masna-palicka-kurka-ta-forel",
     "title": "Ласощі для котів 5 г CLUB 4 PAWS Преміум М’ясна паличка курка та форель",
-    "price": "16.90",
+    "price": 16.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/8219/catalog_product_gal_mob_8219.jpg",
     "category": "Корм"
   },
@@ -411,7 +403,7 @@
     "productName": "Ласощі",
     "url": "https://www.atbmarket.com/product/lasosi-dla-kotiv-5-g-club-4-paws-premium-masna-palicka-indicka-ta-krolik-mup",
     "title": "Ласощі для котів 5 г CLUB 4 PAWS Преміум М'ясна паличка індичка та кролик м/уп",
-    "price": "16.90",
+    "price": 16.9,
     "image": "https://src.zakaz.atbmarket.com/cache/photos/60743/catalog_product_gal_mob_60743.jpg",
     "category": "Корм"
   }

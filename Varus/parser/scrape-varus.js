@@ -31,15 +31,36 @@ async function scrapeProduct(url) {
       }
 
       // Витягуємо елемент з ціною
-      let priceText =
-        document.querySelector(".sf-price__special")?.innerText || // акційна ціна
-        document.querySelector(".sf-price__regular")?.innerText || // або звичайна
-        "";
-
-      // Нормалізуємо і перетворюємо в число
-      let price = parseFloat(
-        priceText.replace(/[^\d.,]/g, "").replace(",", ".")
+      // Отримуємо елемент блоку ціни, обробляючи всі можливі варіанти
+      const priceBlock = document.querySelector(
+        ".m-product-short-info__price-section .sf-price"
       );
+      if (!priceBlock) {
+        return { title, price: null };
+      }
+
+      const specialText = priceBlock
+        .querySelector("ins.sf-price__special")
+        ?.innerText.trim();
+      const regularText = priceBlock
+        .querySelector("span.sf-price__regular")
+        ?.innerText.trim();
+      const oldText = priceBlock
+        .querySelector("del.sf-price__old")
+        ?.innerText.trim();
+
+      const parsePrice = (text) =>
+        parseFloat(text.replace(/[^\d.,]/g, "").replace(",", "."));
+
+      let price = null;
+
+      if (specialText) {
+        price = parsePrice(specialText);
+      } else if (regularText) {
+        price = parsePrice(regularText);
+      } else if (oldText) {
+        price = parsePrice(oldText); // якщо все інше відсутнє
+      }
 
       // Витягуємо URL зображення товару
       const image = document.querySelector(".sf-image picture img")?.src || "";
