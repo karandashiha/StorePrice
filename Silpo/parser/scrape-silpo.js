@@ -13,11 +13,23 @@ async function scrapeProduct(url) {
     console.log("🚀 Відкриваємо:", url);
     await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
 
+    // Очікуємо заголовок
     await page.waitForSelector(".product-page__title", { timeout: 10000 });
 
     const data = await page.evaluate(() => {
+      // Витягуємо назву товару
       let title =
         document.querySelector(".product-page__title")?.innerText.trim() || "";
+
+      // Перевірка на наявність товару
+      const soldOutElement = document.querySelector(".quantity__soldout");
+      const isSoldOut =
+        soldOutElement && soldOutElement.innerText.includes("Товар закінчився");
+
+      // Якщо товар закінчився, не витягуємо ціну і не зберігаємо дані
+      if (isSoldOut) {
+        return { title, isSoldOut };
+      }
       const priceText =
         document.querySelector(".product-page-price__main")?.innerText || "";
 
@@ -29,13 +41,15 @@ async function scrapeProduct(url) {
         price = parseFloat((price * 10).toFixed(2)); // перерахунок на 1 кг
         title = title.replace(/,\s?100\s?г/i, "").trim();
       }
-      // Пробуємо знайти картинку різними способами
+
+      // Витягуємо URL зображення товару
       let image = document.querySelector(".product-img")?.src;
       if (!image) {
         const pictureImg = document.querySelector(".product-img picture img");
         image = pictureImg?.getAttribute("src") || "";
       }
 
+      // Визначаємо категорію товару з "хлібних крихт"
       const breadcrumbs = document.querySelectorAll(
         ".breadcrumbs-list__item a"
       );

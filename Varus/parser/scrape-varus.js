@@ -13,16 +13,38 @@ async function scrapeProduct(url) {
     console.log("🚀 Відкриваємо:", url);
     await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
 
+    // Очікуємо заголовок
     await page.waitForSelector("h1.sf-heading__title", { timeout: 10000 });
 
     const data = await page.evaluate(() => {
+      // Витягуємо назву товару
       const title =
         document.querySelector("h1.sf-heading__title")?.innerText.trim() || "";
-      const priceText =
-        document.querySelector(".sf-price__regular")?.innerText || "";
-      const price = priceText.replace(/[^\d.,]/g, "").replace(",", ".");
+
+      // Перевірка на наявність товару
+      const unavailableButton = document.querySelector(".btn-not-available");
+      if (
+        unavailableButton &&
+        unavailableButton.innerText.includes("Товар закінчився")
+      ) {
+        return { title, unavailable: true }; // Товар недоступний
+      }
+
+      // Витягуємо елемент з ціною
+      let priceText =
+        document.querySelector(".sf-price__special")?.innerText || // акційна ціна
+        document.querySelector(".sf-price__regular")?.innerText || // або звичайна
+        "";
+
+      // Нормалізуємо і перетворюємо в число
+      let price = parseFloat(
+        priceText.replace(/[^\d.,]/g, "").replace(",", ".")
+      );
+
+      // Витягуємо URL зображення товару
       const image = document.querySelector(".sf-image picture img")?.src || "";
 
+      // Визначаємо категорію товару з "хлібних крихт"
       const breadcrumbs = document.querySelectorAll(
         ".sf-breadcrumbs__breadcrumb"
       );

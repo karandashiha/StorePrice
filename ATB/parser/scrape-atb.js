@@ -17,22 +17,46 @@ async function scrapeProduct(url) {
     await page.waitForSelector("h1.page-title", { timeout: 10000 });
 
     const data = await page.evaluate(() => {
+      // Витягуємо назву товару
       const title =
         document.querySelector("h1.page-title")?.innerText.trim() || "";
-      const priceText =
-        document.querySelector(".product-price__top")?.innerText || "";
-      const price = priceText.replace(/[^\d.,]/g, "").replace(",", ".");
+
+      // Перевірка наявності товару
+      const unavailableText =
+        document.querySelector(".available-tag--grey")?.innerText || "";
+      const isUnavailable = unavailableText.includes("Немає в наявності");
+
+      if (isUnavailable) {
+        return { title, unavailable: true };
+      }
+
+      // Витягуємо елемент з ціною
+      const priceTopEl = document.querySelector(".product-price__top");
+      let priceText = "";
+
+      if (priceTopEl) {
+        // Витягуємо цілу частину і копійки окремо
+        const main =
+          priceTopEl.querySelector("span")?.childNodes[0]?.textContent || "";
+        const coin =
+          priceTopEl.querySelector(".product-price__coin")?.textContent || "";
+        priceText = main + coin;
+      }
+      // Формування ціни
+      const price = parseFloat(priceText.replace(/[^\d.]/g, ""));
+
+      // Витягуємо URL зображення товару
       const image =
         document.querySelector(".cardproduct-tabs__item.current picture img")
           ?.src || "";
 
+      // Визначаємо категорію товару з "хлібних крихт"
       const breadcrumbs = document.querySelectorAll(
         ".breadcrumbs__list .breadcrumbs__item a"
       );
       const category =
-        breadcrumbs.length >= 3
-          ? breadcrumbs[2].innerText.trim()
-          : ""; 
+        breadcrumbs.length >= 3 ? breadcrumbs[2].innerText.trim() : "";
+
       return { title, price, image, category };
     });
 
