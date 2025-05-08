@@ -51,5 +51,13 @@ cron.schedule("0 10 * * 4", () => {
 
 // Додатково: дозволяємо ручний запуск
 if (require.main === module) {
-  runAllParsers();
+  runAllParsers()
+    .then(() => {
+      console.log("🛑 Парсинг завершено.");
+      process.exit(0);
+    })
+    .catch((err) => {
+      console.error("❌ Сталася помилка при парсингу:", err);
+      process.exit(1);
+    });
 }
