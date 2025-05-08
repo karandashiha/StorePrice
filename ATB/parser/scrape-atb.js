@@ -96,6 +96,11 @@ async function scrapeProductsFromJson() {
   const resultsMap = new Map();
   scrapedResults.forEach((item) => resultsMap.set(item.url, item));
 
+  const normalizePrice = (p) =>
+    typeof p === "string"
+      ? parseFloat(p.replace(/[^\d.,]/g, "").replace(",", "."))
+      : parseFloat(p);
+
   for (const category in products) {
     const categoryProducts = products[category];
 
@@ -114,25 +119,31 @@ async function scrapeProductsFromJson() {
       const key = product.url;
       const existingData = resultsMap.get(key);
 
-      if (
-        existingData &&
-        existingData.price === productData.price &&
-        existingData.category === productData.category
-      ) {
-        continue; // Дані не змінились
-      }
+      const oldPrice = existingData ? normalizePrice(existingData.price) : null;
+      const newPrice = normalizePrice(productData.price);
 
-      if (existingData) {
-        console.log(`♻️ Оновлення товару: ${product.productName}`);
+      const hasChanges =
+        !existingData ||
+        oldPrice !== newPrice ||
+        existingData.title !== productData.title ||
+        existingData.image !== productData.image ||
+        existingData.category !== productData.category;
+
+      if (hasChanges) {
+        if (existingData) {
+          console.log(`♻️ Оновлення товару: ${product.productName}`);
+        } else {
+          console.log(`➕ Додавання нового товару: ${product.productName}`);
+        }
+
+        resultsMap.set(key, {
+          productName: product.productName,
+          url: product.url,
+          ...productData,
+        });
       } else {
-        console.log(`➕ Додавання нового товару: ${product.productName}`);
+        console.log(`⏩ Без змін: ${product.productName}`);
       }
-
-      resultsMap.set(key, {
-        productName: product.productName,
-        url: product.url,
-        ...productData,
-      });
     }
   }
 

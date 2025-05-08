@@ -35,7 +35,7 @@
     "productName": "Молоко",
     "url": "https://silpo.ua/product/moloko-galychyna-z-chystykh-karpat-2-5-716286",
     "title": "Молоко «Галичина» «З чистих Карпат» 2,5%, 900г",
-    "price": 39.99,
+    "price": 56.99,
     "image": "https://images.silpo.ua/products/744x744/webp/503eb295-6c9d-43f7-b6ba-9998fa3e6c97.png",
     "category": "Молоко"
   },
@@ -51,7 +51,7 @@
     "productName": "Творог",
     "url": "https://silpo.ua/product/syr-ferma-kyslomolochnyi-5-862307",
     "title": "Сир «Ферма» кисломолочний 5%, 350г",
-    "price": 69.9,
+    "price": 74.9,
     "image": "https://images.silpo.ua/products/744x744/webp/b4d53ff8-1853-4ca4-a8dd-cb5b8d2fb1b1.png",
     "category": "Сир кисломолочний"
   },
@@ -67,7 +67,7 @@
     "productName": "Творог",
     "url": "https://silpo.ua/product/syr-kyslomolochnyi-molokiia-5-838497",
     "title": "Сир кисломолочний «Молокія» 5%, 350г",
-    "price": 59.99,
+    "price": 91.49,
     "image": "https://images.silpo.ua/products/744x744/webp/a6c6ffe9-2fa6-46bd-b0aa-25320cf3aa42.jpg",
     "category": "Сир кисломолочний"
   },
@@ -75,7 +75,7 @@
     "productName": "Сметана",
     "url": "https://silpo.ua/product/smetana-molokiia-20-838947",
     "title": "Сметана «Молокія» 20%, 370г",
-    "price": 66.99,
+    "price": 66.49,
     "image": "https://images.silpo.ua/products/744x744/webp/48909dea-d986-4f72-9bc7-424ee2b11b11.png",
     "category": "Сметана"
   },
@@ -83,7 +83,7 @@
     "productName": "Сметана",
     "url": "https://silpo.ua/product/smetana-molokiia-15-838948",
     "title": "Сметана «Молокія» 15%, 370г",
-    "price": 54.99,
+    "price": 53.99,
     "image": "https://images.silpo.ua/products/744x744/webp/2273e6cf-e62d-42b0-87c8-698305b7484f.png",
     "category": "Сметана"
   },
@@ -115,7 +115,7 @@
     "productName": "Огірок",
     "url": "https://silpo.ua/product/ogirok-ekstra-142342",
     "title": "Огірок екстра",
-    "price": 63.2,
+    "price": 80,
     "image": "https://images.silpo.ua/products/744x744/webp/d8776b28-ffe7-4cb3-ad7d-de37532eea57.png",
     "category": "Овочі"
   },
@@ -169,17 +169,17 @@
   },
   {
     "productName": "Буряк",
-    "url": "https://silpo.ua/product/buriak-mytyi-371674",
-    "title": "Буряк митий",
-    "price": 45,
-    "image": "https://images.silpo.ua/products/744x744/webp/30389f44-84e8-4937-b0be-ce75a5fecd14.png",
+    "url": "https://silpo.ua/product/buriak-32570",
+    "title": "Буряк",
+    "price": 35.1,
+    "image": "https://images.silpo.ua/products/744x744/webp/01b0c4a4-f713-41f3-8c2d-1de20831dba2.png",
     "category": "Овочі"
   },
   {
     "productName": "Цибуля",
     "url": "https://silpo.ua/product/tsybulia-ripchasta-zhovta-32573",
     "title": "Цибуля ріпчаста жовта",
-    "price": 30.9,
+    "price": 24.1,
     "image": "https://images.silpo.ua/products/744x744/webp/42108358-3ebb-4310-b4f2-b74adc049a03.png",
     "category": "Овочі"
   },
@@ -187,7 +187,7 @@
     "productName": "Часник",
     "url": "https://silpo.ua/product/chasnyk-32595",
     "title": "Часник",
-    "price": 185,
+    "price": 207.9,
     "image": "https://images.silpo.ua/products/744x744/webp/19d61480-bfdd-4564-8083-a1b31fbc6de1.png",
     "category": "Овочі"
   },
@@ -195,7 +195,7 @@
     "productName": "Часник",
     "url": "https://silpo.ua/product/chasnyk-molodyi-97163",
     "title": "Часник молодий",
-    "price": 183.6,
+    "price": 204,
     "image": "https://images.silpo.ua/products/744x744/webp/1151d163-8a70-42c6-b7b0-b5b3ba09fafa.png",
     "category": "Овочі"
   },
@@ -203,7 +203,7 @@
     "productName": "Кабачок",
     "url": "https://silpo.ua/product/kabachok-51600",
     "title": "Кабачок",
-    "price": 129.1,
+    "price": 108.9,
     "image": "https://images.silpo.ua/products/744x744/webp/fb87deaf-eec3-467f-9544-1dc5aeed93f0.png",
     "category": "Овочі"
   },
@@ -283,7 +283,7 @@
     "productName": "Рис довгий",
     "url": "https://silpo.ua/product/rys-dovgyi-shlifovanyi-689247",
     "title": "Рис довгий шліфований, 1кг",
-    "price": 50.49,
+    "price": 49.59,
     "image": "https://images.silpo.ua/products/744x744/webp/ce952c2b-e97b-4ad3-97cb-ad3d6865a0f4.png",
     "category": "Крупи"
   },
@@ -299,7 +299,7 @@
     "productName": "Горох крупа",
     "url": "https://silpo.ua/product/gorokh-kolotyi-povna-chasha-shlifovanyi-534517",
     "title": "Горох колотий «Повна Чаша»® шліфований, 900г",
-    "price": 25.49,
+    "price": 26.99,
     "image": "https://images.silpo.ua/products/744x744/webp/0a942b51-62da-4dbd-bb02-71eecdbd17c1.png",
     "category": "Бобові"
   },
@@ -307,7 +307,7 @@
     "productName": "Майонез",
     "url": "https://silpo.ua/product/sous-povna-chasha-salatnyi-maioneznyi-30-882607",
     "title": "Соус «Повна Чаша»® «Салатний» майонезний 30%, 340г",
-    "price": 22.19,
+    "price": 19.99,
     "image": "https://images.silpo.ua/products/744x744/webp/9bd193ed-66e3-416e-b6c8-34cfa5c3bf3a.png",
     "category": "Майонез"
   },
@@ -387,7 +387,7 @@
     "productName": "Білизна",
     "url": "https://silpo.ua/product/zasib-vidbiliuiuchyi-povna-chasha-bilyzna-922413",
     "title": "Засіб відбілюючий «Повна Чаша»® Білизна, 900г",
-    "price": 15.39,
+    "price": 20.9,
     "image": "https://images.silpo.ua/products/744x744/webp/3b7836bb-b960-42a9-a0b8-7a2b7d70886c.png",
     "category": "Плямовивідники, відбілювачі"
   },
@@ -395,7 +395,7 @@
     "productName": "Крот",
     "url": "https://silpo.ua/product/zasib-sana-krot-dlia-rozchynennia-zabrudnen-u-trubakh-546466",
     "title": "Засіб «Сана Крот» для розчинення забруднень у трубах, 1,05кг",
-    "price": 34.99,
+    "price": 32.99,
     "image": "https://images.silpo.ua/products/744x744/webp/2002d43e-c8f7-40e7-9287-684085fd1f53.png",
     "category": "Для прибирання"
   },
@@ -467,7 +467,7 @@
     "productName": "Туалетний папір",
     "url": "https://silpo.ua/product/papir-tualetnyi-snizhna-panda-klasik-502544",
     "title": "Папір туалетний «Сніжна панда» «Класік», 4шт",
-    "price": 59.99,
+    "price": 75.49,
     "image": "https://images.silpo.ua/products/744x744/webp/d7a750f8-bdb2-4725-991f-71d1968b3c32.png",
     "category": "Туалетний папір"
   },
@@ -483,7 +483,7 @@
     "productName": "Рушники",
     "url": "https://silpo.ua/product/rushnyky-povna-chasha-paperovi-bili-2-sharovi-815716",
     "title": "Рушники «Повна Чаша»® паперові білі 2-шарові, шт",
-    "price": 53.19,
+    "price": 49.99,
     "image": "https://images.silpo.ua/products/744x744/webp/d93f235f-c221-4b73-8f5e-7f602c64ee03.png",
     "category": "Паперові рушники"
   },
