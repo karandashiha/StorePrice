@@ -14,64 +14,48 @@ async function scrapeProduct(url) {
     await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
 
     // Очікуємо заголовок
-    await page.waitForSelector("h1.sf-heading__title", { timeout: 10000 });
+    await page.waitForSelector(".product-page__title", { timeout: 10000 });
 
     const data = await page.evaluate(() => {
       // Витягуємо назву товару
-      const title =
-        document.querySelector("h1.sf-heading__title")?.innerText.trim() || "";
+      let title =
+        document.querySelector(".product-page__title")?.innerText.trim() || "";
 
       // Перевірка на наявність товару
-      const unavailableButton = document.querySelector(".btn-not-available");
-      if (
-        unavailableButton &&
-        unavailableButton.innerText.includes("Товар закінчився")
-      ) {
-        return { title, unavailable: true }; // Товар недоступний
+      const soldOutElement = document.querySelector(".quantity__soldout");
+      const isSoldOut =
+        soldOutElement && soldOutElement.innerText.includes("Товар закінчився");
+
+      // Якщо товар закінчився, не витягуємо ціну і не зберігаємо дані
+      if (isSoldOut) {
+        return { title, isSoldOut };
       }
+      const priceText =
+        document.querySelector(".product-page-price__main")?.innerText || "";
 
-      // Витягуємо елемент з ціною
-      // Отримуємо елемент блоку ціни, обробляючи всі можливі варіанти
-      const priceBlock = document.querySelector(
-        ".m-product-short-info__price-section .sf-price"
-      );
-      if (!priceBlock) {
-        return { title, price: null };
-      }
+      //Нормалізація цін Сільпо: перерахунок з 100г на 1кг у парсері
+      let price = priceText.replace(/[^\d.,]/g, "").replace(",", ".");
+      price = parseFloat(price);
 
-      const specialText = priceBlock
-        .querySelector("ins.sf-price__special")
-        ?.innerText.trim();
-      const regularText = priceBlock
-        .querySelector("span.sf-price__regular")
-        ?.innerText.trim();
-      const oldText = priceBlock
-        .querySelector("del.sf-price__old")
-        ?.innerText.trim();
-
-      const parsePrice = (text) =>
-        parseFloat(text.replace(/[^\d.,]/g, "").replace(",", "."));
-
-      let price = null;
-
-      if (specialText) {
-        price = parsePrice(specialText);
-      } else if (regularText) {
-        price = parsePrice(regularText);
-      } else if (oldText) {
-        price = parsePrice(oldText); // якщо все інше відсутнє
+      if (/100\s?г/.test(title.toLowerCase())) {
+        price = parseFloat((price * 10).toFixed(2)); // перерахунок на 1 кг
+        title = title.replace(/,\s?100\s?г/i, "").trim();
       }
 
       // Витягуємо URL зображення товару
-      const image = document.querySelector(".sf-image picture img")?.src || "";
+      let image = document.querySelector(".product-img")?.src;
+      if (!image) {
+        const pictureImg = document.querySelector(".product-img picture img");
+        image = pictureImg?.getAttribute("src") || "";
+      }
 
       // Визначаємо категорію товару з "хлібних крихт"
       const breadcrumbs = document.querySelectorAll(
-        ".sf-breadcrumbs__breadcrumb"
+        ".breadcrumbs-list__item a"
       );
       const category =
-        breadcrumbs.length >= 2
-          ? breadcrumbs[breadcrumbs.length - 2].innerText.trim()
+        breadcrumbs.length >= 3
+          ? breadcrumbs[breadcrumbs.length - 3].innerText.trim()
           : "";
 
       return { title, price, image, category };
@@ -94,13 +78,12 @@ async function scrapeProduct(url) {
 }
 
 async function scrapeProductsFromJson() {
-  const jsonFolderPath =
-    "C:/Users/Kathryn/Desktop/Порівняння цін_ЧатБОТ/ParserProducts/StorePrice/Varus/json";
+  const jsonFolderPath = path.join(__dirname,"..","json");
 
-  const productsPath = path.join(jsonFolderPath, "productsVarus.json");
+  const productsPath = path.join(jsonFolderPath, "productsSilpo.json");
   const scrapedResultsPath = path.join(
     jsonFolderPath,
-    "scrapedResultsVarus.json"
+    "scrapedResultsSilpo.json"
   );
 
   const products = JSON.parse(fs.readFileSync(productsPath, "utf8"));
@@ -112,6 +95,11 @@ async function scrapeProductsFromJson() {
 
   const resultsMap = new Map();
   scrapedResults.forEach((item) => resultsMap.set(item.url, item));
+
+  const normalizePrice = (p) =>
+    typeof p === "string"
+      ? parseFloat(p.replace(/[^\d.,]/g, "").replace(",", "."))
+      : parseFloat(p);
 
   for (const category in products) {
     const categoryProducts = products[category];
@@ -130,12 +118,6 @@ async function scrapeProductsFromJson() {
 
       const key = product.url;
       const existingData = resultsMap.get(key);
-
-      const normalizePrice = (p) =>
-        typeof p === "string"
-          ? parseFloat(p.replace(/[^\d.,]/g, "").replace(",", "."))
-          : parseFloat(p);
-
       const oldPrice = existingData ? normalizePrice(existingData.price) : null;
       const newPrice = normalizePrice(productData.price);
 

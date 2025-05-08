@@ -14,49 +14,48 @@ async function scrapeProduct(url) {
     await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
 
     // Очікуємо заголовок
-    await page.waitForSelector(".product-page__title", { timeout: 10000 });
+    await page.waitForSelector("h1.page-title", { timeout: 10000 });
 
     const data = await page.evaluate(() => {
       // Витягуємо назву товару
-      let title =
-        document.querySelector(".product-page__title")?.innerText.trim() || "";
+      const title =
+        document.querySelector("h1.page-title")?.innerText.trim() || "";
 
-      // Перевірка на наявність товару
-      const soldOutElement = document.querySelector(".quantity__soldout");
-      const isSoldOut =
-        soldOutElement && soldOutElement.innerText.includes("Товар закінчився");
+      // Перевірка наявності товару
+      const unavailableText =
+        document.querySelector(".available-tag--grey")?.innerText || "";
+      const isUnavailable = unavailableText.includes("Немає в наявності");
 
-      // Якщо товар закінчився, не витягуємо ціну і не зберігаємо дані
-      if (isSoldOut) {
-        return { title, isSoldOut };
+      if (isUnavailable) {
+        return { title, unavailable: true };
       }
-      const priceText =
-        document.querySelector(".product-page-price__main")?.innerText || "";
 
-      //Нормалізація цін Сільпо: перерахунок з 100г на 1кг у парсері
-      let price = priceText.replace(/[^\d.,]/g, "").replace(",", ".");
-      price = parseFloat(price);
+      // Витягуємо елемент з ціною
+      const priceTopEl = document.querySelector(".product-price__top");
+      let priceText = "";
 
-      if (/100\s?г/.test(title.toLowerCase())) {
-        price = parseFloat((price * 10).toFixed(2)); // перерахунок на 1 кг
-        title = title.replace(/,\s?100\s?г/i, "").trim();
+      if (priceTopEl) {
+        // Витягуємо цілу частину і копійки окремо
+        const main =
+          priceTopEl.querySelector("span")?.childNodes[0]?.textContent || "";
+        const coin =
+          priceTopEl.querySelector(".product-price__coin")?.textContent || "";
+        priceText = main + coin;
       }
+      // Формування ціни
+      const price = parseFloat(priceText.replace(/[^\d.]/g, ""));
 
       // Витягуємо URL зображення товару
-      let image = document.querySelector(".product-img")?.src;
-      if (!image) {
-        const pictureImg = document.querySelector(".product-img picture img");
-        image = pictureImg?.getAttribute("src") || "";
-      }
+      const image =
+        document.querySelector(".cardproduct-tabs__item.current picture img")
+          ?.src || "";
 
       // Визначаємо категорію товару з "хлібних крихт"
       const breadcrumbs = document.querySelectorAll(
-        ".breadcrumbs-list__item a"
+        ".breadcrumbs__list .breadcrumbs__item a"
       );
       const category =
-        breadcrumbs.length >= 3
-          ? breadcrumbs[breadcrumbs.length - 3].innerText.trim()
-          : "";
+        breadcrumbs.length >= 3 ? breadcrumbs[2].innerText.trim() : "";
 
       return { title, price, image, category };
     });
@@ -78,13 +77,12 @@ async function scrapeProduct(url) {
 }
 
 async function scrapeProductsFromJson() {
-  const jsonFolderPath =
-    "C:/Users/Kathryn/Desktop/Порівняння цін_ЧатБОТ/ParserProducts/StorePrice/Silpo/json";
+  const jsonFolderPath = path.join(__dirname, "..", "json");
 
-  const productsPath = path.join(jsonFolderPath, "productsSilpo.json");
+  const productsPath = path.join(jsonFolderPath, "productsATB.json");
   const scrapedResultsPath = path.join(
     jsonFolderPath,
-    "scrapedResultsSilpo.json"
+    "scrapedResultsATB.json"
   );
 
   const products = JSON.parse(fs.readFileSync(productsPath, "utf8"));
@@ -119,6 +117,7 @@ async function scrapeProductsFromJson() {
 
       const key = product.url;
       const existingData = resultsMap.get(key);
+
       const oldPrice = existingData ? normalizePrice(existingData.price) : null;
       const newPrice = normalizePrice(productData.price);
 

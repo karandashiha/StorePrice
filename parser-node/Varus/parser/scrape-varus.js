@@ -14,48 +14,65 @@ async function scrapeProduct(url) {
     await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
 
     // Очікуємо заголовок
-    await page.waitForSelector("h1.page-title", { timeout: 10000 });
+    await page.waitForSelector("h1.sf-heading__title", { timeout: 10000 });
 
     const data = await page.evaluate(() => {
       // Витягуємо назву товару
       const title =
-        document.querySelector("h1.page-title")?.innerText.trim() || "";
+        document.querySelector("h1.sf-heading__title")?.innerText.trim() || "";
 
-      // Перевірка наявності товару
-      const unavailableText =
-        document.querySelector(".available-tag--grey")?.innerText || "";
-      const isUnavailable = unavailableText.includes("Немає в наявності");
-
-      if (isUnavailable) {
-        return { title, unavailable: true };
+      // Перевірка на наявність товару
+      const unavailableButton = document.querySelector(".btn-not-available");
+      if (
+        unavailableButton &&
+        unavailableButton.innerText.includes("Товар закінчився")
+      ) {
+        return { title, unavailable: true }; // Товар недоступний
       }
 
       // Витягуємо елемент з ціною
-      const priceTopEl = document.querySelector(".product-price__top");
-      let priceText = "";
-
-      if (priceTopEl) {
-        // Витягуємо цілу частину і копійки окремо
-        const main =
-          priceTopEl.querySelector("span")?.childNodes[0]?.textContent || "";
-        const coin =
-          priceTopEl.querySelector(".product-price__coin")?.textContent || "";
-        priceText = main + coin;
+      // Отримуємо елемент блоку ціни, обробляючи всі можливі варіанти
+      const priceBlock = document.querySelector(
+        ".m-product-short-info__price-section .sf-price"
+      );
+      if (!priceBlock) {
+        return { title, price: null };
       }
-      // Формування ціни
-      const price = parseFloat(priceText.replace(/[^\d.]/g, ""));
+
+      const specialText = priceBlock
+        .querySelector("ins.sf-price__special")
+        ?.innerText.trim();
+      const regularText = priceBlock
+        .querySelector("span.sf-price__regular")
+        ?.innerText.trim();
+      const oldText = priceBlock
+        .querySelector("del.sf-price__old")
+        ?.innerText.trim();
+
+      const parsePrice = (text) =>
+        parseFloat(text.replace(/[^\d.,]/g, "").replace(",", "."));
+
+      let price = null;
+
+      if (specialText) {
+        price = parsePrice(specialText);
+      } else if (regularText) {
+        price = parsePrice(regularText);
+      } else if (oldText) {
+        price = parsePrice(oldText); // якщо все інше відсутнє
+      }
 
       // Витягуємо URL зображення товару
-      const image =
-        document.querySelector(".cardproduct-tabs__item.current picture img")
-          ?.src || "";
+      const image = document.querySelector(".sf-image picture img")?.src || "";
 
       // Визначаємо категорію товару з "хлібних крихт"
       const breadcrumbs = document.querySelectorAll(
-        ".breadcrumbs__list .breadcrumbs__item a"
+        ".sf-breadcrumbs__breadcrumb"
       );
       const category =
-        breadcrumbs.length >= 3 ? breadcrumbs[2].innerText.trim() : "";
+        breadcrumbs.length >= 2
+          ? breadcrumbs[breadcrumbs.length - 2].innerText.trim()
+          : "";
 
       return { title, price, image, category };
     });
@@ -77,13 +94,12 @@ async function scrapeProduct(url) {
 }
 
 async function scrapeProductsFromJson() {
-  const jsonFolderPath =
-    "C:/Users/Kathryn/Desktop/Порівняння цін_ЧатБОТ/ParserProducts/StorePrice/ATB/json";
+  const jsonFolderPath = path.join(__dirname, "..", "json");
 
-  const productsPath = path.join(jsonFolderPath, "productsATB.json");
+  const productsPath = path.join(jsonFolderPath, "productsVarus.json");
   const scrapedResultsPath = path.join(
     jsonFolderPath,
-    "scrapedResultsATB.json"
+    "scrapedResultsVarus.json"
   );
 
   const products = JSON.parse(fs.readFileSync(productsPath, "utf8"));
@@ -95,11 +111,6 @@ async function scrapeProductsFromJson() {
 
   const resultsMap = new Map();
   scrapedResults.forEach((item) => resultsMap.set(item.url, item));
-
-  const normalizePrice = (p) =>
-    typeof p === "string"
-      ? parseFloat(p.replace(/[^\d.,]/g, "").replace(",", "."))
-      : parseFloat(p);
 
   for (const category in products) {
     const categoryProducts = products[category];
@@ -118,6 +129,11 @@ async function scrapeProductsFromJson() {
 
       const key = product.url;
       const existingData = resultsMap.get(key);
+
+      const normalizePrice = (p) =>
+        typeof p === "string"
+          ? parseFloat(p.replace(/[^\d.,]/g, "").replace(",", "."))
+          : parseFloat(p);
 
       const oldPrice = existingData ? normalizePrice(existingData.price) : null;
       const newPrice = normalizePrice(productData.price);
