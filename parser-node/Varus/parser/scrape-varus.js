@@ -77,6 +77,11 @@ async function scrapeProduct(url) {
       return { title, price, image, category };
     });
 
+    // ✅ Перевизначення категорії для авокадо
+    if (data.title.toLowerCase().includes("авокадо")) {
+      data.category = "Фрукти свіжі";
+    }
+
     if (!data.title || !data.price) {
       console.log("❌ Не вдалося отримати дані для цього товару:", url);
       await browser.close();
