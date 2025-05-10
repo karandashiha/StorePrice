@@ -1,5 +1,8 @@
 package org.example.store.products;
 
+import lombok.Getter;
+
+@Getter
 public class Product {
     String productName;
     String title;
