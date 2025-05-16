@@ -36,10 +36,29 @@ function loadAllProducts() {
   return allProducts;
 }
 
-function getProductsByCategory(rawCategory) {
-  const normCategory = normalizeCategory(rawCategory);
+function getProductsByProductName(rawProductName) {
+  //const normCategory = normalizeCategory(rawCategory);
   const all = loadAllProducts();
-  return all.filter((p) => normalizeCategory(p.category) === normCategory);
+  //return all.filter((p) => normalizeCategory(p.category) === normCategory);
+  const matches = all.filter((p) =>
+    p.productName.toLowerCase().includes(rawProductName.toLowerCase())
+  );
+
+  if (matches.length === 0) return { message: "Товар не знайдено" };
+
+  const sorted = matches
+    .slice()
+    .sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+
+  return {
+    cheapest: {
+      productName: sorted[0].productName,
+      title: sorted[0].title,
+      price: sorted[0].price,
+      store: sorted[0].store,
+    },
+    allMatches: matches,
+  };
 }
 
 function findCheapestProductByProductNameAndCategory(
@@ -73,7 +92,7 @@ function findCheapestProductByProductNameAndCategory(
 }
 
 module.exports = {
-  getProductsByCategory,
+  getProductsByProductName,
   findCheapestProductByProductNameAndCategory,
   normalizeCategory,
 };

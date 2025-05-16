@@ -1,28 +1,17 @@
 package org.example.store.products;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class Product {
-    String productName;
-    String title;
-    double price;
-    String image;
-    String category;
+    private String productName;
+    private String title;
+    private double price;
+    private String image;
+    private String category;
+    private String store;
+    private String url;
 
-    // Конструктор для ініціалізації
-    public Product(String productName, String title, double price, String image, String category) {
-        this.productName = productName;
-        this.title = title;
-        this.price = price;
-        this.image = image;
-        this.category = category;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("🛒 %s\n📦 %s\n💸 %s грн\n📂 Категорія: %s\n",
-                productName, title, price, category);
-
-    }
 }

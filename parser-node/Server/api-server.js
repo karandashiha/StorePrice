@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const {
-  getProductsByCategory,
+  getProductsByProductName,
   findCheapestProductByProductNameAndCategory,
 } = require("./utils");
 
@@ -10,15 +10,20 @@ const PORT = 3000;
 
 app.use(cors());
 
-// Отримати всі товари певної категорії з усіх магазинів
-app.get("/products/:category", (req, res) => {
-  const category = req.params.category;
-  const results = getProductsByCategory(category);
-  res.json(results);
+//Знайти товари з productName , де найдешевше
+app.get("/product", (req, res) => {
+  const { productName } = req.query;
+  if (!productName) {
+    return res.status(400).json({ error: "Потрібно вказати productName" });
+  }
+
+  const result = getProductsByProductName(productName);
+  res.json(result);
 });
+ 
 
 // Знайти всі товари з productName + category і вказати, де найдешевше
-app.get("/product", (req, res) => {
+app.get("/product_category", (req, res) => {
   const { productName, category } = req.query;
   if (!productName || !category) {
     return res
