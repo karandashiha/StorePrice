@@ -1,54 +1,55 @@
 package org.example.store.telegram;
 
+import org.example.store.products.Product;
+import org.example.store.server.ProductFetcher;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageText;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class CategoryButtons {
     private static final int ITEMS_PER_PAGE = 5;
 
-    private  static final List<String> categories = Arrays.asList(
-            "Молоко", "Сир кисломолочний", "Сметана", "Йогурти",
-            "Кисломолочні напої", "Яйця", "Овочі", "Фрукти та ягоди",
-            "Борошно", "Крупи", "Майонез", "Соняшникова олія",
-            "Цукор", "Сіль", "Овочі і фрукти заморожені",
-            "Пральні порошки та засоби для прання", "Засоби для прибирання та чищення",
-            "Зубні пасти", "Гігієнічні прокладки", "Дезодоранти",
-            "Туалетний папір", "Паперові рушники", "Ласощі для тварин"
-    );
-    public static final Map<String, String> categoryMap = new HashMap<String, String>() {{
-        put("Молоко", "milk");
-        put("Сир кисломолочний", "syr_kislomolochny");
-        put("Сметана", "smetana");
-        put("Йогурти", "yohurty");
-        put("Кисломолочні напої", "kyslomolochni_napoi");
-        put("Яйця", "eggs");
-        put("Овочі", "ovochi");
-        put("Фрукти та ягоди", "frukty_yahody");
-        put("Борошно", "boroshno");
-        put("Крупи", "krupy");
-        put("Майонез", "maionez");
-        put("Соняшникова олія", "sonyashnykova_oliya");
-        put("Цукор", "tsukor");
-        put("Сіль", "sil");
-        put("Овочі і фрукти заморожені", "ovochi_frukty_zamorozheni");
-        put("Пральні порошки та засоби для прання", "pralni_zasoby");
-        put("Засоби для прибирання та чищення", "prybyrannya_chyshchennya");
-        put("Зубні пасти", "zubni_pasty");
-        put("Гігієнічні прокладки", "prokladky");
-        put("Дезодоранти", "dezodoranty");
-        put("Туалетний папір", "tualetnyy_papir");
-        put("Паперові рушники", "paperovi_rushnyky");
-        put("Ласощі для тварин", "lasoschi_dlya_tvaryn");
+    // Мапа категорій з підкатегоріями
+    public static final Map<String, List<String>> categoryGroups = new LinkedHashMap<>() {{
+        put("Молочні продукти", Arrays.asList("Молоко", "Творог", "Сметана", "Йогурт", "Кефір"));
+        put("Яйця", Arrays.asList("Яйця"));
+        put("Овочі", Arrays.asList("Огірок", "Помідор", "Капуста", "Перець солодкий", "Картопля", "Морква", "Буряк", "Цибуля", "Часник", "Кабачок"));
+        put("Фрукти та ягоди", Arrays.asList("Банан", "Яблуко", "Мандарини", "Авокадо", "Лимон", "Апельсин", "Ківі"));
+        put("Бакалія", Arrays.asList("Борошно", "Крупа", "Майонез", "Олія", "Цукор", "Сіль"));
+        put("Крупа", Arrays.asList("Гречка", "Рис круглий", "Рис довгий", "Вівсянка", "Горох крупа"));
+        put("Овочі і фрукти заморожені", Arrays.asList("Капуста броколі", "Суміш овочей"));
+        put("Пральні порошки та засоби для прання", Arrays.asList("Пом'якшувач для тканин", "Гель для прання", "Білизна"));
+        put("Засоби для прибирання та чищення ", Arrays.asList("Крот"));
+        put("Гігієна та догляд", Arrays.asList("Зубні пасти", "Гігієнічні прокладки", "Дезодоранти", "Туалетний папір", "Паперові рушники"));
+        put("Ласощі для тварин", Arrays.asList("Ласощі"));
     }};
-    private static final List<InlineKeyboardButton> allCategoryButtons = categories.stream()
-            .map(category -> createButton(category, "category_" +  categoryMap.get(category)))
-            .collect(Collectors.toList());
+
+    public static final Map<String, String> groupToId = Map.ofEntries(
+            Map.entry("Молочні продукти", "group_milk"),
+            Map.entry("Яйця", "group_eggs"),
+            Map.entry("Овочі", "group_ovochi"),
+            Map.entry("Фрукти та ягоди", "group_fruits"),
+            Map.entry("Бакалія", "group_bakaliya"),
+            Map.entry("Крупа", "group_krupa"),
+            Map.entry("Овочі і фрукти заморожені", "group_frozen"),
+            Map.entry("Пральні порошки та засоби для прання", "group_wash"),
+            Map.entry("Засоби для прибирання та чищення ", "group_cleaning"),
+            Map.entry("Гігієна та догляд", "group_hygiene"),
+            Map.entry("Ласощі для тварин", "group_pets")
+    );
+
+    public static final Map<String, String> idToGroup = groupToId.entrySet().stream()
+            .collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
+
+    public static final Map<String, String> subcategoryToGroup = categoryGroups.entrySet().stream()
+            .flatMap(entry -> entry.getValue().stream().map(sub -> Map.entry(sub, entry.getKey())))
+            .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
     private static InlineKeyboardButton createButton(String text, String callbackData) {
         InlineKeyboardButton button = new InlineKeyboardButton();
@@ -57,60 +58,177 @@ public class CategoryButtons {
         return button;
     }
 
-    // Відправляємо пагіновані кнопки
-    public static void sendCategoryMenu(Long chatId, MyBot bot, int page, Integer messageId) {
-        InlineKeyboardMarkup markup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
-
+    // ГОЛОВНЕ МЕНЮ КАТЕГОРІЙ
+    public static void sendGroupMenu(Long chatId, MyBot bot, int page, Integer messageId) {
+        List<String> allGroups = new ArrayList<>(categoryGroups.keySet());
         int start = page * ITEMS_PER_PAGE;
-        int end = Math.min(start + ITEMS_PER_PAGE, allCategoryButtons.size());
+        int end = Math.min(start + ITEMS_PER_PAGE, allGroups.size());
 
-        // Додаємо кнопки категорій
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
         for (int i = start; i < end; i++) {
-            keyboard.add(Collections.singletonList(allCategoryButtons.get(i)));
+            String group = allGroups.get(i);
+            keyboard.add(Collections.singletonList(createButton(group, groupToId.get(group))));
         }
 
-        // Кнопки пагінації
-        List<InlineKeyboardButton> navigationRow = new ArrayList<>();
-        if (page > 0) {
-            navigationRow.add(createButton("⬅️ Назад", "page_" + (page - 1)));
-        }
-        if (end < allCategoryButtons.size()) {
-            navigationRow.add(createButton("Вперед ➡️", "page_" + (page + 1)));
-        }
-        if (!navigationRow.isEmpty()) {
-            keyboard.add(navigationRow);
-        }
+        List<InlineKeyboardButton> navRow = new ArrayList<>();
+        if (page > 0) navRow.add(createButton("⬅️ Назад", "page_" + (page - 1)));
+        if (end < allGroups.size()) navRow.add(createButton("Вперед ➡️", "page_" + (page + 1)));
+        if (!navRow.isEmpty()) keyboard.add(navRow);
 
+        InlineKeyboardMarkup markup = new InlineKeyboardMarkup();
         markup.setKeyboard(keyboard);
-        if (messageId != null) {
-            EditMessageText editMessage = new EditMessageText();
-            editMessage.setChatId(chatId.toString());
-            editMessage.setMessageId(messageId);
-            editMessage.setText("Оберіть категорію товару:");
-            editMessage.setReplyMarkup(markup);
 
-            try {
+        String menuText = "Оберіть категорію товару:";
+
+        try {
+            if (messageId != null) {
+                EditMessageText editMessage = new EditMessageText();
+                editMessage.setChatId(chatId.toString());
+                editMessage.setMessageId(messageId);
+                editMessage.setText(menuText);
+                editMessage.setReplyMarkup(markup);
                 bot.execute(editMessage);
-            } catch (TelegramApiException e) {
-                e.printStackTrace();
-            }
-        } else {
-            SendMessage sendMessage = new SendMessage();
-            sendMessage.setChatId(chatId.toString());
-            sendMessage.setText("Оберіть категорію товару:");
-            sendMessage.setReplyMarkup(markup);
-
-            try {
+            } else {
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId.toString());
+                sendMessage.setText(menuText);
+                sendMessage.setReplyMarkup(markup);
                 bot.execute(sendMessage);
-            } catch (TelegramApiException e) {
-                e.printStackTrace();
             }
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
         }
     }
 
-    // Для команди /menu - відображаємо першу сторінку
-    public static void sendCategoryMenu(long chatId, MyBot bot) {
-        sendCategoryMenu(chatId, bot, 0, null); // Оскільки це перше повідомлення, не передаємо messageId
+
+    // ПІДКАТЕГОРІЇ
+    public static void sendSubcategoryMenu(Long chatId, MyBot bot, String groupName, int page, Integer messageId) {
+        List<String> subcategories = categoryGroups.get(groupName);
+        if (subcategories == null) return;
+
+        int start = page * ITEMS_PER_PAGE;
+        int end = Math.min(start + ITEMS_PER_PAGE, subcategories.size());
+
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        for (int i = start; i < end; i++) {
+            String sub = subcategories.get(i);
+            String groupId = CategoryButtons.groupToId.get(groupName);
+            keyboard.add(Collections.singletonList(createButton(sub, "sub_" + sub + "_" + groupId)));
+
+        }
+
+        List<InlineKeyboardButton> navRow = new ArrayList<>();
+        if (page > 0)
+            navRow.add(createButton("⬅️ Назад", "subpage_" + groupName + "_" + (page - 1)));
+        if (end < subcategories.size())
+            navRow.add(createButton("Вперед ➡️", "subpage_" + groupName + "_" + (page + 1)));
+        if (!navRow.isEmpty()) keyboard.add(navRow);
+        keyboard.add(Collections.singletonList(
+                createButton("🔝 Назад до категорій", "main_categories")
+        ));
+        InlineKeyboardMarkup markup = new InlineKeyboardMarkup();
+        markup.setKeyboard(keyboard);
+
+        String menuText = "Оберіть підкатегорію:";
+
+        try {
+            if (messageId != null) {
+                EditMessageText editMessage = new EditMessageText();
+                editMessage.setChatId(chatId.toString());
+                editMessage.setMessageId(messageId);
+                editMessage.setText(menuText);
+                editMessage.setReplyMarkup(markup);
+                bot.execute(editMessage);
+            } else {
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId.toString());
+                sendMessage.setText(menuText);
+                sendMessage.setReplyMarkup(markup);
+                bot.execute(sendMessage);
+            }
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // ПЕРЕЛІК ТОВАРІВ
+    public static void sendProductList(Long chatId, MyBot bot, String subcategory, int page, Integer messageId, String groupName) {
+        try {
+            List<Product> products = ProductFetcher.fetchCheapestProductByCategory(subcategory, groupName);
+
+            if (products == null || products.isEmpty()) {
+                bot.sendMessage(chatId, "🔍 Товари в категорії \"" + subcategory + "\" не знайдені.");
+                return;
+            }
+
+            // Уникнути дублювання товару (з allMatches), якщо перший товар – це "cheapest"
+            Set<String> seenTitles = new HashSet<>();
+            List<Product> uniqueProducts = new ArrayList<>();
+
+            for (Product p : products) {
+                if (!seenTitles.contains(p.getTitle())) {
+                    uniqueProducts.add(p);
+                    seenTitles.add(p.getTitle());
+                }
+            }
+
+            // Сортування за ціною
+            uniqueProducts.sort(Comparator.comparingDouble(Product::getPrice));
+
+            int start = page * ITEMS_PER_PAGE;
+            int end = Math.min(start + ITEMS_PER_PAGE, uniqueProducts.size());
+
+            StringBuilder text = new StringBuilder("🛒 Товари в категорії: *" + subcategory + "*\n\n");
+            for (int i = start; i < end; i++) {
+                Product p = uniqueProducts.get(i);
+                text.append("🔹 *").append(p.getTitle()).append("*\n")
+                        .append("💵 Ціна: ").append(p.getPrice()).append(" грн\n")
+                        .append("🏬 Магазин: ").append(p.getStore()).append("\n")
+                        .append("🔗 [Перейти до товару](").append(p.getUrl()).append(")\n\n");
+            }
+
+            List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+
+            // Пагінація
+            List<InlineKeyboardButton> navRow = new ArrayList<>();
+            if (page > 0) {
+                navRow.add(createButton("⬅️ Назад", "page_sub_" + subcategory + "_" + (page - 1)));
+            }
+            if (end < uniqueProducts.size()) {
+                navRow.add(createButton("Вперед ➡️", "page_sub_" + subcategory + "_" + (page + 1)));
+            }
+            if (!navRow.isEmpty()) {
+                keyboard.add(navRow);
+            }
+
+            // навігаційні кнопки
+            keyboard.add(List.of(
+                    createButton("◀️ Назад до підкатегорії", CategoryButtons.groupToId.get(groupName)),
+                    createButton("🔝 Назад до категорій", "main_categories")
+            ));
+
+            InlineKeyboardMarkup markup = new InlineKeyboardMarkup();
+            markup.setKeyboard(keyboard);
+
+            if (messageId != null) {
+                EditMessageText editMessage = new EditMessageText();
+                editMessage.setChatId(chatId.toString());
+                editMessage.setMessageId(messageId);
+                editMessage.setText(text.toString());
+                editMessage.setParseMode("Markdown");
+                editMessage.setReplyMarkup(markup);
+                bot.execute(editMessage);
+            } else {
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId.toString());
+                sendMessage.setText(text.toString());
+                sendMessage.setParseMode("Markdown");
+                sendMessage.setReplyMarkup(markup);
+                bot.execute(sendMessage);
+            }
+
+        } catch (IOException | TelegramApiException e) {
+            e.printStackTrace();
+        }
     }
 }
