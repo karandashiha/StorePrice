@@ -3,7 +3,7 @@
     "productName": "Молоко",
     "url": "https://varus.ua/moloko-zoryana-ultrapasterizovannoe-2-5-900-g",
     "title": "МОЛОКО ЗОРЯНА УЛЬТРАПАСТЕРИЗОВАНЕ 2.5% 900 Г",
-    "price": 49.2,
+    "price": 33.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2629881/0",
     "category": "Молоко"
   },
@@ -11,7 +11,7 @@
     "productName": "Молоко",
     "url": "https://varus.ua/moloko-ultrapasterizovane-2-6-900g-tf",
     "title": "МОЛОКО ЯГОТИНСЬКЕ 2.6% УЛЬТРАПАСТЕРИЗОВАНЕ 900 Г",
-    "price": 44.9,
+    "price": 54.3,
     "image": "https://varus.ua/img/carousel/1140/1140/2625117/0",
     "category": "Молоко"
   },
@@ -19,7 +19,7 @@
     "productName": "Молоко",
     "url": "https://varus.ua/moloko-zhitomirskiy-molochniy-zavod-ultrapasterizovannoe-2-5-900-g",
     "title": "МОЛОКО ЖИТОМИРСЬКИЙ МОЛОЧНИЙ ЗАВОД УЛЬТРАПАСТЕРИЗОВАНЕ 2.5% 900 Г",
-    "price": 34.9,
+    "price": 45.5,
     "image": "https://varus.ua/img/carousel/1140/1140/2629221/0",
     "category": "Молоко"
   },
@@ -27,7 +27,7 @@
     "productName": "Молоко",
     "url": "https://varus.ua/moloko-varto-2-5-ultrapasterizovane-900-g",
     "title": "МОЛОКО VARTO 2.5% УЛЬТРАПАСТЕРИЗОВАНЕ 900 Г",
-    "price": 47.9,
+    "price": 43.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2598491/0",
     "category": "Молоко"
   },
@@ -43,7 +43,7 @@
     "productName": "Молоко",
     "url": "https://varus.ua/moloko-2-5-ultrapasterizovane-bila-liniya-mu-900g",
     "title": "МОЛОКО БІЛА ЛІНІЯ 2.5% УЛЬТРАПАСТЕРИЗОВАНЕ 900 Г",
-    "price": 57.5,
+    "price": 65.1,
     "image": "https://varus.ua/img/carousel/1140/1140/2586857/0",
     "category": "Молоко"
   },
@@ -75,7 +75,7 @@
     "productName": "Творог",
     "url": "https://varus.ua/sir-kislomolochniy-5-yagotin-350g",
     "title": "СИР ЯГОТИНСЬКИЙ 5% 350 Г",
-    "price": 65.9,
+    "price": 82.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2623271/0",
     "category": "Кисломолочні сири"
   },
@@ -89,17 +89,17 @@
   },
   {
     "productName": "Сметана",
-    "url": "https://varus.ua/smetana-zlagoda-20-200-g",
-    "title": "СМЕТАНА ЗЛАГОДА 20% 200 Г",
-    "price": 33.9,
-    "image": "https://varus.ua/img/product/1140/1140/2649209",
+    "url": "https://varus.ua/smetana-stolicya-smaku-20-400-g",
+    "title": "СМЕТАНА СТОЛИЦЯ СМАКУ 20% 400 Г",
+    "price": 47.8,
+    "image": "https://varus.ua/img/carousel/1140/1140/2623217/0",
     "category": "Сметана"
   },
   {
     "productName": "Сметана",
     "url": "https://varus.ua/smetana-stolicya-smaku-15-400-g",
     "title": "СМЕТАНА СТОЛИЦЯ СМАКУ 15% 400 Г",
-    "price": 39.5,
+    "price": 47.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2623216/0",
     "category": "Сметана"
   },
@@ -115,15 +115,15 @@
     "productName": "Кефір",
     "url": "https://varus.ua/kefir-2-5-zlagoda-880g-p-e",
     "title": "КЕФІР ЗЛАГОДА 2,5%, 880 Г",
-    "price": 43.5,
-    "image": "https://varus.ua/img/product/1140/1140/121212",
+    "price": 52.9,
+    "image": "https://varus.ua/img/carousel/1140/1140/121212/0",
     "category": "Кефір"
   },
   {
     "productName": "Кефір",
     "url": "https://varus.ua/kefir-2-5-vigoda-900g-p-p-ukraina",
     "title": "КЕФIР ВИГОДА НІЖНІСТЬ 2,5%, 900 Г",
-    "price": 42.9,
+    "price": 42.4,
     "image": "https://varus.ua/img/product/1140/1140/2497805",
     "category": "Кефір"
   },
@@ -131,7 +131,7 @@
     "productName": "Яйця",
     "url": "https://varus.ua/yajce-kuryache-nefasovane-s0-1-sht",
     "title": "ЯЙЦЕ КУРЯЧЕ НЕФАСОВАНЕ С0 1 ШТ",
-    "price": 4.99,
+    "price": 5.09,
     "image": "https://varus.ua/img/product/1140/1140/2634131",
     "category": "Яйця"
   },
@@ -139,7 +139,7 @@
     "productName": "Огірок",
     "url": "https://varus.ua/ogirok-teplichniy-1-gatunok-vag",
     "title": "ОГІРОК ТЕПЛИЧНИЙ ВАГОВИЙ",
-    "price": 84.9,
+    "price": 89.9,
     "image": "https://varus.ua/img/product/1140/1140/2507408",
     "category": "Овочі свіжі"
   },
@@ -147,7 +147,7 @@
     "productName": "Помідор",
     "url": "https://varus.ua/pomidor-krasnye-vesovoy",
     "title": "ПОМІДОР САЛАТНИЙ ВАГОВИЙ",
-    "price": 99.9,
+    "price": 89.9,
     "image": "https://varus.ua/img/product/1140/1140/156936",
     "category": "Овочі свіжі"
   },
@@ -155,7 +155,7 @@
     "productName": "Капуста",
     "url": "https://varus.ua/kapusta-1-gatunok-vag",
     "title": "КАПУСТА ВАГОВА",
-    "price": 64.9,
+    "price": 69.9,
     "image": "https://varus.ua/img/product/1140/1140/145844",
     "category": "Овочі свіжі"
   },
@@ -179,7 +179,7 @@
     "productName": "Картопля",
     "url": "https://varus.ua/kartoplya-1-gatunok-vag",
     "title": "КАРТОПЛЯ ВАГОВА",
-    "price": 29.9,
+    "price": 35.9,
     "image": "https://varus.ua/img/product/1140/1140/2552225",
     "category": "Овочі свіжі"
   },
@@ -187,7 +187,7 @@
     "productName": "Картопля",
     "url": "https://varus.ua/kartoplya-dlya-zapikannya-koroleva-anna-vagova",
     "title": "КАРТОПЛЯ КОРОЛЕВА АННА ДЛЯ ЗАПІКАННЯ ВАГОВА",
-    "price": 42.5,
+    "price": 44.9,
     "image": "https://varus.ua/img/product/1140/1140/2651656",
     "category": "Овочі свіжі"
   },
@@ -195,7 +195,7 @@
     "productName": "Морква",
     "url": "https://varus.ua/morkva-1-gatunok-vag",
     "title": "МОРКВА ВАГОВА",
-    "price": 54.9,
+    "price": 49.9,
     "image": "https://varus.ua/img/product/1140/1140/147011",
     "category": "Овочі свіжі"
   },
@@ -203,7 +203,7 @@
     "productName": "Буряк",
     "url": "https://varus.ua/buryak-1-gatunok-vag",
     "title": "БУРЯК ВАГОВИЙ",
-    "price": 37.9,
+    "price": 49.9,
     "image": "https://varus.ua/img/product/1140/1140/146474",
     "category": "Овочі свіжі"
   },
@@ -211,7 +211,7 @@
     "productName": "Цибуля",
     "url": "https://varus.ua/cibulya-ripchasta-1-gatunok-vag",
     "title": "ЦИБУЛЯ РІПЧАСТА ВАГОВА",
-    "price": 28.9,
+    "price": 29.9,
     "image": "https://varus.ua/img/product/1140/1140/124166",
     "category": "Овочі свіжі"
   },
@@ -219,7 +219,7 @@
     "productName": "Часник",
     "url": "https://varus.ua/chasnik-vag",
     "title": "ЧАСНИК, ВАГОВИЙ",
-    "price": 154.9,
+    "price": 164.9,
     "image": "https://varus.ua/img/product/1140/1140/124241",
     "category": "Овочі свіжі"
   },
@@ -227,7 +227,7 @@
     "productName": "Кабачок",
     "url": "https://varus.ua/kabachki-1-gatunok-importni-vag",
     "title": "КАБАЧКИ ВАГОВІ",
-    "price": 99.9,
+    "price": 94.9,
     "image": "https://varus.ua/img/product/1140/1140/2507412",
     "category": "Овочі свіжі"
   },
@@ -235,7 +235,7 @@
     "productName": "Банан",
     "url": "https://varus.ua/banan-vag",
     "title": "БАНАН ВАГОВИЙ",
-    "price": 71.8,
+    "price": 72.9,
     "image": "https://varus.ua/img/product/1140/1140/127622",
     "category": "Фрукти свіжі"
   },
@@ -243,7 +243,7 @@
     "productName": "Яблуко",
     "url": "https://varus.ua/yabluko-ukrainske-1-gatunok-vag",
     "title": "ЯБЛУКО УКРАЇНСЬКЕ ВАГОВЕ",
-    "price": 62.9,
+    "price": 65.9,
     "image": "https://varus.ua/img/product/1140/1140/353913",
     "category": "Фрукти свіжі"
   },
@@ -251,7 +251,7 @@
     "productName": "Мандарини",
     "url": "https://varus.ua/mandarin-murkot-vag",
     "title": "МАНДАРИН МУРКОТ ВАГОВИЙ",
-    "price": 89.9,
+    "price": 74.9,
     "image": "https://varus.ua/img/product/1140/1140/2615440",
     "category": "Фрукти свіжі"
   },
@@ -259,7 +259,7 @@
     "productName": "Авокадо",
     "url": "https://varus.ua/avokado-haas-vag",
     "title": "АВОКАДО ХААС, ВАГОВИЙ",
-    "price": 206.9,
+    "price": 269.9,
     "image": "https://varus.ua/img/product/1140/1140/2613174",
     "category": "Фрукти свіжі"
   },
@@ -275,7 +275,7 @@
     "productName": "Апельсин",
     "url": "https://varus.ua/apelsin-vag",
     "title": "АПЕЛЬСИН ВАГОВИЙ",
-    "price": 62.9,
+    "price": 49.9,
     "image": "https://varus.ua/img/product/1140/1140/127797",
     "category": "Фрукти свіжі"
   },
@@ -283,7 +283,7 @@
     "productName": "Ківі",
     "url": "https://varus.ua/kivi-vag",
     "title": "КІВІ ВАГОВЕ",
-    "price": 159.9,
+    "price": 139.9,
     "image": "https://varus.ua/img/product/1140/1140/128923",
     "category": "Фрукти свіжі"
   },
@@ -307,7 +307,7 @@
     "productName": "Рис круглий",
     "url": "https://varus.ua/ris-vigoda-shlifovaniy-kruglozernistiy-0-9-kg",
     "title": "РИС ВИГОДА ШЛІФОВАНИЙ КРУГЛОЗЕРНІСТИЙ 0.9 КГ",
-    "price": 43.4,
+    "price": 45.6,
     "image": "https://varus.ua/img/carousel/1140/1140/2498869/0",
     "category": "Рис"
   },
@@ -373,29 +373,29 @@
     "title": "КАПУСТА БРОКОЛІ СВІЖОМОРОЖЕНА ВАГОВА",
     "price": 199,
     "image": "https://varus.ua/img/carousel/1140/1140/325715/0",
-    "category": "Овочі заморожені"
+    "category": "Заморожені овочі"
   },
   {
     "productName": "Суміш овочей",
     "url": "https://varus.ua/sumish-ovocheva-vigoda-meksikanska-shvidkozamorozhena-vagova",
     "title": "СУМІШ ОВОЧЕВА ВИГОДА МЕКСИКАНСЬКА ШВИДКОЗАМОРОЖЕНА, ВАГОВА",
-    "price": 78.9,
+    "price": 109,
     "image": "https://varus.ua/img/product/1140/1140/2624282",
-    "category": "Овочі заморожені"
+    "category": "Заморожені овочі"
   },
   {
     "productName": "Суміш овочей",
     "url": "https://varus.ua/smes-ovoschnaya-dlya-omleta-zamorozhennaya-vesovaya",
     "title": "СУМІШ ОВОЧЕВА ДЛЯ ОМЛЕТУ ЗАМОРОЖЕНА, ВАГОВА",
     "price": 135,
-    "image": "https://varus.ua/img/product/1140/1140/2577434",
-    "category": "Овочі заморожені"
+    "image": "https://varus.ua/img/carousel/1140/1140/2577434/0",
+    "category": "Заморожені овочі"
   },
   {
     "productName": "Пом'якшувач для тканин",
     "url": "https://varus.ua/opolaskivatel-konditsioner-dlya-belya-silan-fresh-sky-880-ml",
     "title": "ОПОЛІСКУВАЧ-КОНДИЦІОНЕР ДЛЯ БІЛИЗНИ SILAN FRESH SKY 880 МЛ",
-    "price": 104.5,
+    "price": 109.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2636461/0",
     "category": "Кондиціонери для білизни"
   },
@@ -403,7 +403,7 @@
     "productName": "Пом'якшувач для тканин",
     "url": "https://varus.ua/opolaskivatel-konditsioner-dlya-belya-silan-aromatherapy-dreame-lotus-770-ml",
     "title": "ОПОЛІСКУВАЧ-КОНДИЦІОНЕР ДЛЯ БІЛИЗНИ SILAN AROMATHERAPY DREAME LOTUS 770 МЛ",
-    "price": 104.5,
+    "price": 109.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2636459/0",
     "category": "Кондиціонери для білизни"
   },
@@ -411,7 +411,7 @@
     "productName": "Пом'якшувач для тканин",
     "url": "https://varus.ua/opolaskivatel-konditsioner-dlya-belya-silan-aromatherapy-fascinating-frangipani-770-ml",
     "title": "ОПОЛІСКУВАЧ-КОНДИЦІОНЕР ДЛЯ БІЛИЗНИ SILAN AROMATHERAPY FASCINATING FRANGIPANI 770 МЛ",
-    "price": 104.5,
+    "price": 109.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2636456/0",
     "category": "Кондиціонери для білизни"
   },
@@ -419,7 +419,7 @@
     "productName": "Гель для прання",
     "url": "https://varus.ua/gel-dlya-stirki-washandfree-universalnyj-2-l",
     "title": "ГЕЛЬ ДЛЯ ПРАННЯ WASH&FREE УНІВЕРСАЛЬНИЙ 2 Л",
-    "price": 93.9,
+    "price": 110.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2639547/0",
     "category": "Рідкі засоби для прання"
   },
@@ -427,7 +427,7 @@
     "productName": "Білизна",
     "url": "https://varus.ua/bilizna-chista-vigoda-1000g",
     "title": "БІЛИЗНА ЧИСТА ВИГОДА! 900 Г",
-    "price": 18.3,
+    "price": 18,
     "image": "https://varus.ua/img/carousel/1140/1140/2549214/0",
     "category": "Плямовивідники та відбілювачі"
   },
@@ -435,7 +435,7 @@
     "productName": "Зубна паста",
     "url": "https://varus.ua/zubna-pasta-lacalut-anti-caries-75-ml",
     "title": "ЗУБНА ПАСТА LACALUT ANTI-CARIES 75 МЛ",
-    "price": 72.5,
+    "price": 96.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2594124/0",
     "category": "Зубні пасти"
   },
@@ -443,7 +443,7 @@
     "productName": "Зубна паста",
     "url": "https://varus.ua/pasta-zubna-colgate-tingling-mint-maxclean-75ml",
     "title": "ПАСТА ЗУБНА COLGATE TINGLING MINT MAXCLEAN 75 МЛ",
-    "price": 59.9,
+    "price": 74.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2632673/0",
     "category": "Зубні пасти"
   },
@@ -456,7 +456,7 @@
     "category": "Прокладки"
   },
   {
-    "productName": "Прокладки для критичних днів",
+    "productName": "Прокладки(к)",
     "url": "https://varus.ua/prokladki-gigienichni-kotex-ultra-normal-20-sht",
     "title": "ПРОКЛАДКИ ГІГІЄНІЧНІ KOTEX ULTRA НОРМАЛ 20 ШТ.",
     "price": 89,
@@ -467,7 +467,7 @@
     "productName": "Дезодорант",
     "url": "https://varus.ua/dezodorant-rol-zhinochiy-efekt-pudri-niveya-50ml",
     "title": "ДЕЗОДОРАНТ NIVEA ЕФЕКТ ПУДРИ РОЛИКОВИЙ ДЛЯ ЖІНОК 50 МЛ",
-    "price": 61.9,
+    "price": 88.8,
     "image": "https://varus.ua/img/carousel/1140/1140/2538213/0",
     "category": "Дезодоранти та антиперспіранти"
   },
@@ -491,7 +491,7 @@
     "productName": "Туалетний папір",
     "url": "https://varus.ua/papir-tualetniy-trisharoviy-biliy-z-tisnennyam-varto-soft-4sht",
     "title": "ПАПІР ТУАЛЕТНИЙ VARTO SOFT ТРИШАРОВИЙ БІЛИЙ 4ШТ",
-    "price": 67.9,
+    "price": 72.1,
     "image": "https://varus.ua/img/carousel/1140/1140/2617465/0",
     "category": "Туалетний папір"
   },
@@ -499,7 +499,7 @@
     "productName": "Рушники",
     "url": "https://varus.ua/rushnik-paperoviy-varto-soft-trisharoviy-1-sht-1",
     "title": "РУШНИК ПАПЕРОВИЙ VARTO SOFT ТРИШАРОВИЙ 1 ШТ.",
-    "price": 66.9,
+    "price": 56.8,
     "image": "https://varus.ua/img/product/1140/1140/2601040",
     "category": "Серветки та рушники"
   },
@@ -507,7 +507,7 @@
     "productName": "Рушники",
     "url": "https://varus.ua/rushniki-paperovi-selekta-mega-rol-trisharovi-bili-ruta-1-rulon",
     "title": "РУШНИКИ RUTA EXTRA ABSORB SELECTA ПАПЕРОВІ 3-ШАРОВІ 1 ШТ",
-    "price": 65.9,
+    "price": 99,
     "image": "https://varus.ua/img/carousel/1140/1140/2569101/0",
     "category": "Серветки та рушники"
   },
@@ -515,7 +515,7 @@
     "productName": "Ласощі",
     "url": "https://varus.ua/myasna-palichka-klub-4-lapi-losos-ta-triska-5-g",
     "title": "М'ЯСНА ПАЛИЧКА КЛУБ 4 ЛАПИ ЛОСОСЬ ТА ТРІСКА 5 Г",
-    "price": 16.4,
+    "price": 14.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2629786/0",
     "category": "Ласощі для тварин"
   },
@@ -523,7 +523,7 @@
     "productName": "Ласощі",
     "url": "https://varus.ua/myasna-palichka-dlya-kotiv-indichka-ta-yagnya-premium-klub-4-lapi-5g",
     "title": "ЛАСОЩІ КЛУБ 4 ЛАПИ ІНДИЧКА ТА ЯГНЯТИНА ДЛЯ КОТІВ 5 Г",
-    "price": 16.5,
+    "price": 14.9,
     "image": "https://varus.ua/img/carousel/1140/1140/2604835/0",
     "category": "Ласощі для тварин"
   }

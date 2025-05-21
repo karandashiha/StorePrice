@@ -4,6 +4,7 @@ const path = require("path");
 const stores = ["ATB", "Varus", "Silpo"];
 
 const categoryMap = require("./categoryMap");
+const { url } = require("inspector");
 
 // Нормалізація категорій для порівняння
 function normalizeCategory(rawCategory) {
@@ -37,9 +38,7 @@ function loadAllProducts() {
 }
 
 function getProductsByProductName(rawProductName) {
-  //const normCategory = normalizeCategory(rawCategory);
   const all = loadAllProducts();
-  //return all.filter((p) => normalizeCategory(p.category) === normCategory);
   const matches = all.filter((p) =>
     p.productName.toLowerCase().includes(rawProductName.toLowerCase())
   );
@@ -56,6 +55,7 @@ function getProductsByProductName(rawProductName) {
       title: sorted[0].title,
       price: sorted[0].price,
       store: sorted[0].store,
+      url: sorted[0].url
     },
     allMatches: matches,
   };
@@ -86,6 +86,7 @@ function findCheapestProductByProductNameAndCategory(
       title: sorted[0].title,
       price: sorted[0].price,
       store: sorted[0].store,
+      url: sorted[0].url
     },
     allMatches: matches,
   };
