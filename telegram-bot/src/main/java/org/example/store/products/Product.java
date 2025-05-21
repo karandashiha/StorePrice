@@ -14,4 +14,12 @@ public class Product {
     private String store;
     private String url;
 
+    @Override
+    public String toString() {
+        return "🔹 *" + getTitle() + "*\n" +
+                "💵 Ціна: " + getPrice() + " грн\n" +
+                "🏬 Магазин: " + getStore() + "\n" +
+                (getUrl() != null && !getUrl().isEmpty() ? "🔗 [Перейти до товару](" + getUrl() + ")" : "🔗 Посилання відсутнє");
+    }
+
 }

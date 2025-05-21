@@ -21,12 +21,11 @@ public class CategoryButtons {
         put("Яйця", Arrays.asList("Яйця"));
         put("Овочі", Arrays.asList("Огірок", "Помідор", "Капуста", "Перець солодкий", "Картопля", "Морква", "Буряк", "Цибуля", "Часник", "Кабачок"));
         put("Фрукти та ягоди", Arrays.asList("Банан", "Яблуко", "Мандарини", "Авокадо", "Лимон", "Апельсин", "Ківі"));
-        put("Бакалія", Arrays.asList("Борошно", "Крупа", "Майонез", "Олія", "Цукор", "Сіль"));
-        put("Крупа", Arrays.asList("Гречка", "Рис круглий", "Рис довгий", "Вівсянка", "Горох крупа"));
+        put("Бакалія", Arrays.asList("Борошно", "Гречка", "Рис круглий", "Рис довгий", "Вівсянка", "Горох крупа", "Майонез", "Олія", "Цукор", "Сіль"));
         put("Овочі і фрукти заморожені", Arrays.asList("Капуста броколі", "Суміш овочей"));
         put("Пральні порошки та засоби для прання", Arrays.asList("Пом'якшувач для тканин", "Гель для прання", "Білизна"));
         put("Засоби для прибирання та чищення ", Arrays.asList("Крот"));
-        put("Гігієна та догляд", Arrays.asList("Зубні пасти", "Гігієнічні прокладки", "Дезодоранти", "Туалетний папір", "Паперові рушники"));
+        put("Гігієна та догляд", Arrays.asList("Зубна паста", "Прокладки щоденні", "Прокладки(к)", "Дезодорант", "Туалетний папір", "Рушники"));
         put("Ласощі для тварин", Arrays.asList("Ласощі"));
     }};
 
@@ -36,7 +35,6 @@ public class CategoryButtons {
             Map.entry("Овочі", "group_ovochi"),
             Map.entry("Фрукти та ягоди", "group_fruits"),
             Map.entry("Бакалія", "group_bakaliya"),
-            Map.entry("Крупа", "group_krupa"),
             Map.entry("Овочі і фрукти заморожені", "group_frozen"),
             Map.entry("Пральні порошки та засоби для прання", "group_wash"),
             Map.entry("Засоби для прибирання та чищення ", "group_cleaning"),
@@ -124,7 +122,7 @@ public class CategoryButtons {
             navRow.add(createButton("Вперед ➡️", "subpage_" + groupName + "_" + (page + 1)));
         if (!navRow.isEmpty()) keyboard.add(navRow);
         keyboard.add(Collections.singletonList(
-                createButton("🔝 Назад до категорій", "main_categories")
+                createButton("🔝 До категорій", "main_categories")
         ));
         InlineKeyboardMarkup markup = new InlineKeyboardMarkup();
         markup.setKeyboard(keyboard);
@@ -175,16 +173,26 @@ public class CategoryButtons {
             // Сортування за ціною
             uniqueProducts.sort(Comparator.comparingDouble(Product::getPrice));
 
+            // Знаходимо найдешевший товар
+            Product cheapestProduct = uniqueProducts.get(0);
+            String cheapestTitle = cheapestProduct.getTitle();
+
             int start = page * ITEMS_PER_PAGE;
             int end = Math.min(start + ITEMS_PER_PAGE, uniqueProducts.size());
 
             StringBuilder text = new StringBuilder("🛒 Товари в категорії: *" + subcategory + "*\n\n");
+
             for (int i = start; i < end; i++) {
                 Product p = uniqueProducts.get(i);
+
+                if (p.getTitle().equals(cheapestTitle)) {
+                    text.append("\uD83D\uDC47 *Найдешевший товар! *\n\n");
+                }
                 text.append("🔹 *").append(p.getTitle()).append("*\n")
                         .append("💵 Ціна: ").append(p.getPrice()).append(" грн\n")
                         .append("🏬 Магазин: ").append(p.getStore()).append("\n")
-                        .append("🔗 [Перейти до товару](").append(p.getUrl()).append(")\n\n");
+                        .append("🔗 [Перейти до товару](").append(p.getUrl()).append(")\n")
+                        .append("━━━━━━━━━━━━━━━━━━━━━━━\n\n");
             }
 
             List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
@@ -203,8 +211,8 @@ public class CategoryButtons {
 
             // навігаційні кнопки
             keyboard.add(List.of(
-                    createButton("◀️ Назад до підкатегорії", CategoryButtons.groupToId.get(groupName)),
-                    createButton("🔝 Назад до категорій", "main_categories")
+                    createButton("◀️ До підкатегорії", CategoryButtons.groupToId.get(groupName)),
+                    createButton("🔝 До категорій", "main_categories")
             ));
 
             InlineKeyboardMarkup markup = new InlineKeyboardMarkup();
