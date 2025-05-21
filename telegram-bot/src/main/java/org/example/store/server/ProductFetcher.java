@@ -15,8 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductFetcher {
-    // Метод для отримання товарів за категорією
+    // Метод для отримання товарів за категорією в меню
     public static List<Product> fetchCheapestProductByCategory(String productName, String category) throws IOException {
+
+        if (productName == null || category == null) {
+            throw new IllegalArgumentException("productName або category не можуть бути null");
+        }
         OkHttpClient client = new OkHttpClient();
         String url = "http://localhost:3000/product_category?productName=" +
                 URLEncoder.encode(productName, StandardCharsets.UTF_8) +
@@ -35,6 +39,17 @@ public class ProductFetcher {
             JsonObject jsonObject = JsonParser.parseString(json).getAsJsonObject();
 
             List<Product> productList = new ArrayList<>();
+            // Спочатку додаємо "cheapest
+            if (jsonObject.has("cheapest") && !jsonObject.get("cheapest").isJsonNull()) {
+                JsonObject cheapest = jsonObject.getAsJsonObject("cheapest");
+                Product product = new Product();
+                product.setProductName(cheapest.has("productName") ? cheapest.get("productName").getAsString() : "Невідомо");
+                product.setTitle(cheapest.has("title") ? cheapest.get("title").getAsString() : "Без назви");
+                product.setPrice(cheapest.has("price") ? cheapest.get("price").getAsDouble() : 0.0);
+                product.setStore(cheapest.has("store") ? cheapest.get("store").getAsString() : "Невідомий магазин");
+                product.setUrl(cheapest.has("url") ? cheapest.get("url").getAsString() : "");
+                productList.add(product);
+            }
 
             // Опрацьовуємо allMatches
             if (jsonObject.has("allMatches") && jsonObject.get("allMatches").isJsonArray()) {
@@ -54,7 +69,7 @@ public class ProductFetcher {
     }
 
 
-    // Метод для отримання найкращої ціни для продукту
+    // Метод для отримання найкращої ціни для продукту в пошуковій системі
     public static Product fetchCheapestProduct(String productName) throws IOException {
         OkHttpClient client = new OkHttpClient();
         String url = "http://localhost:3000/product?productName=" + URLEncoder.encode(productName, StandardCharsets.UTF_8);
